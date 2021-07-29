@@ -1,0 +1,5 @@
+name = 'DB Logger'
+description = 'Just logging some silly stuff in the db! Why do you care? Well, it has to do with views.'
+
+core = 7.x
+package = 'Custom'

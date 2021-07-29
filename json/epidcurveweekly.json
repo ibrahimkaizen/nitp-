@@ -1,0 +1,492 @@
+{
+  "nodes" : [
+    {
+      "node" : {
+        "date-tested" : "2020-01",
+        "tested" : "1",
+        "text" : "2020-W01",
+        "positive" : "\n \n \n \n \n \n \n 0 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-02",
+        "tested" : "131",
+        "text" : "2020-W02",
+        "positive" : "\n \n \n \n \n \n \n 13 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-03",
+        "tested" : "1",
+        "text" : "2020-W03",
+        "positive" : "\n \n \n \n \n \n \n 0 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-04",
+        "tested" : "58",
+        "text" : "2020-W04",
+        "positive" : "\n \n \n \n \n \n \n 7 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-07",
+        "tested" : "310",
+        "text" : "2020-W07",
+        "positive" : "\n \n \n \n \n \n \n 19 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-08",
+        "tested" : "2",
+        "text" : "2020-W08",
+        "positive" : "\n \n \n \n \n \n \n 0 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-09",
+        "tested" : "1",
+        "text" : "2020-W09",
+        "positive" : "\n \n \n \n \n \n \n 0 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-10",
+        "tested" : "1",
+        "text" : "2020-W10",
+        "positive" : "\n \n \n \n \n \n \n 1 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-11",
+        "tested" : "177",
+        "text" : "2020-W11",
+        "positive" : "\n \n \n \n \n \n \n 12 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-12",
+        "tested" : "6",
+        "text" : "2020-W12",
+        "positive" : "\n \n \n \n \n \n \n 0 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-13",
+        "tested" : "42",
+        "text" : "2020-W13",
+        "positive" : "\n \n \n \n \n \n \n 3 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-14",
+        "tested" : "281",
+        "text" : "2020-W14",
+        "positive" : "\n \n \n \n \n \n \n 48 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-15",
+        "tested" : "496",
+        "text" : "2020-W15",
+        "positive" : "\n \n \n \n \n \n \n 55 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-16",
+        "tested" : "603",
+        "text" : "2020-W16",
+        "positive" : "\n \n \n \n \n \n \n 45 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-17",
+        "tested" : "1975",
+        "text" : "2020-W17",
+        "positive" : "\n \n \n \n \n \n \n 506 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-18",
+        "tested" : "652",
+        "text" : "2020-W18",
+        "positive" : "\n \n \n \n \n \n \n 202 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-19",
+        "tested" : "711",
+        "text" : "2020-W19",
+        "positive" : "\n \n \n \n \n \n \n 158 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-20",
+        "tested" : "1310",
+        "text" : "2020-W20",
+        "positive" : "\n \n \n \n \n \n \n 292 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-21",
+        "tested" : "188",
+        "text" : "2020-W21",
+        "positive" : "\n \n \n \n \n \n \n 24 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-22",
+        "tested" : "176",
+        "text" : "2020-W22",
+        "positive" : "\n \n \n \n \n \n \n 66 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-23",
+        "tested" : "1015",
+        "text" : "2020-W23",
+        "positive" : "\n \n \n \n \n \n \n 364 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-24",
+        "tested" : "451",
+        "text" : "2020-W24",
+        "positive" : "\n \n \n \n \n \n \n 89 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-25",
+        "tested" : "2726",
+        "text" : "2020-W25",
+        "positive" : "\n \n \n \n \n \n \n 1230 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-26",
+        "tested" : "2144",
+        "text" : "2020-W26",
+        "positive" : "\n \n \n \n \n \n \n 694 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-27",
+        "tested" : "3791",
+        "text" : "2020-W27",
+        "positive" : "\n \n \n \n \n \n \n 1030 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-28",
+        "tested" : "4309",
+        "text" : "2020-W28",
+        "positive" : "\n \n \n \n \n \n \n 907 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-29",
+        "tested" : "5290",
+        "text" : "2020-W29",
+        "positive" : "\n \n \n \n \n \n \n 834 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-30",
+        "tested" : "4245",
+        "text" : "2020-W30",
+        "positive" : "\n \n \n \n \n \n \n 843 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-31",
+        "tested" : "2638",
+        "text" : "2020-W31",
+        "positive" : "\n \n \n \n \n \n \n 460 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-32",
+        "tested" : "5280",
+        "text" : "2020-W32",
+        "positive" : "\n \n \n \n \n \n \n 460 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-33",
+        "tested" : "5211",
+        "text" : "2020-W33",
+        "positive" : "\n \n \n \n \n \n \n 791 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-34",
+        "tested" : "4357",
+        "text" : "2020-W34",
+        "positive" : "\n \n \n \n \n \n \n 972 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-35",
+        "tested" : "2834",
+        "text" : "2020-W35",
+        "positive" : "\n \n \n \n \n \n \n 158 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-36",
+        "tested" : "3654",
+        "text" : "2020-W36",
+        "positive" : "\n \n \n \n \n \n \n 232 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-37",
+        "tested" : "5371",
+        "text" : "2020-W37",
+        "positive" : "\n \n \n \n \n \n \n 234 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-38",
+        "tested" : "7241",
+        "text" : "2020-W38",
+        "positive" : "\n \n \n \n \n \n \n 382 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-39",
+        "tested" : "7169",
+        "text" : "2020-W39",
+        "positive" : "\n \n \n \n \n \n \n 514 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-40",
+        "tested" : "6964",
+        "text" : "2020-W40",
+        "positive" : "\n \n \n \n \n \n \n 287 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-41",
+        "tested" : "7034",
+        "text" : "2020-W41",
+        "positive" : "\n \n \n \n \n \n \n 346 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-42",
+        "tested" : "7149",
+        "text" : "2020-W42",
+        "positive" : "\n \n \n \n \n \n \n 614 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-43",
+        "tested" : "3007",
+        "text" : "2020-W43",
+        "positive" : "\n \n \n \n \n \n \n 148 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-44",
+        "tested" : "6909",
+        "text" : "2020-W44",
+        "positive" : "\n \n \n \n \n \n \n 371 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-45",
+        "tested" : "6968",
+        "text" : "2020-W45",
+        "positive" : "\n \n \n \n \n \n \n 604 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-46",
+        "tested" : "8963",
+        "text" : "2020-W46",
+        "positive" : "\n \n \n \n \n \n \n 674 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-47",
+        "tested" : "5875",
+        "text" : "2020-W47",
+        "positive" : "\n \n \n \n \n \n \n 419 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-48",
+        "tested" : "8319",
+        "text" : "2020-W48",
+        "positive" : "\n \n \n \n \n \n \n 395 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-49",
+        "tested" : "7956",
+        "text" : "2020-W49",
+        "positive" : "\n \n \n \n \n \n \n 801 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-50",
+        "tested" : "10552",
+        "text" : "2020-W50",
+        "positive" : "\n \n \n \n \n \n \n 916 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-51",
+        "tested" : "11520",
+        "text" : "2020-W51",
+        "positive" : "\n \n \n \n \n \n \n 1656 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-52",
+        "tested" : "9810",
+        "text" : "2020-W52",
+        "positive" : "\n \n \n \n \n \n \n 2320 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2020-53",
+        "tested" : "6804",
+        "text" : "2020-W53",
+        "positive" : "\n \n \n \n \n \n \n 3093 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-01",
+        "tested" : "14502",
+        "text" : "2021-W01",
+        "positive" : "\n \n \n \n \n \n \n 4574 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-02",
+        "tested" : "20426",
+        "text" : "2021-W02",
+        "positive" : "\n \n \n \n \n \n \n 4340 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-03",
+        "tested" : "21516",
+        "text" : "2021-W03",
+        "positive" : "\n \n \n \n \n \n \n 4285 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-04",
+        "tested" : "16430",
+        "text" : "2021-W04",
+        "positive" : "\n \n \n \n \n \n \n 3011 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-05",
+        "tested" : "14455",
+        "text" : "2021-W05",
+        "positive" : "\n \n \n \n \n \n \n 2084 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-06",
+        "tested" : "13942",
+        "text" : "2021-W06",
+        "positive" : "\n \n \n \n \n \n \n 1687 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-07",
+        "tested" : "13921",
+        "text" : "2021-W07",
+        "positive" : "\n \n \n \n \n \n \n 1357 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-08",
+        "tested" : "13171",
+        "text" : "2021-W08",
+        "positive" : "\n \n \n \n \n \n \n 1111 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-09",
+        "tested" : "11670",
+        "text" : "2021-W09",
+        "positive" : "\n \n \n \n \n \n \n 796 \n \n \n \n \n \n \n \n"
+      }
+    },
+    {
+      "node" : {
+        "date-tested" : "2021-10",
+        "tested" : "10968",
+        "text" : "2021-W10",
+        "positive" : "\n \n \n \n \n \n \n 499 \n \n \n \n \n \n \n \n"
+      }
+    }
+  ]
+}

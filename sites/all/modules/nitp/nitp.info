@@ -1,0 +1,8 @@
+name = NITP module
+description = NITP module
+package = Custom
+
+core = 7.x
+
+scripts[] = nitp.js
+

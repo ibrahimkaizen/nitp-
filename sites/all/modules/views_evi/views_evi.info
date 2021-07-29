@@ -1,0 +1,38 @@
+name = Views EVI (Exposed Filter Value Injector)
+description = Provides the ability to use arguments in exposed filters. A first step to abstract value providers from filters.
+package = "Views"
+core = 7.x
+php = 5.3
+dependencies[] = views
+configure = admin/structure/views/settings/advanced
+
+files[] = views/ViewsEviDisplayExtender.inc
+files[] = lib/ViewsEviFilterWrapper.inc
+
+files[] = views_evi/ViewsEviHandlerInterface.inc
+files[] = views_evi/ViewsEviValueInterface.inc
+files[] = views_evi/ViewsEviVisibilityInterface.inc
+files[] = views_evi/ViewsEviHandlerTokenInterface.inc
+
+files[] = views_evi/ViewsEviHandlerBase.inc
+files[] = views_evi/ViewsEviValueBase.inc
+files[] = views_evi/ViewsEviVisibilityBase.inc
+
+files[] = views_evi/ViewsEviHandlerTokenBase.inc
+files[] = views_evi/ViewsEviValueTokenBase.inc
+files[] = views_evi/ViewsEviVisibilityTokenBase.inc
+
+files[] = views_evi/value/ViewsEviValueForm.inc
+files[] = views_evi/value/ViewsEviValueToken.inc
+files[] = views_evi/value/ViewsEviValuePhp.inc
+
+files[] = views_evi/visibility/ViewsEviVisibilityYes.inc
+files[] = views_evi/visibility/ViewsEviVisibilityNo.inc
+files[] = views_evi/visibility/ViewsEviVisibilityFallback.inc
+files[] = views_evi/visibility/ViewsEviVisibilityPhp.inc
+
+; Information added by Drupal.org packaging script on 2020-11-05
+version = "7.x-1.0"
+core = "7.x"
+project = "views_evi"
+datestamp = "1604613202"

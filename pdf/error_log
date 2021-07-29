@@ -1,0 +1,45 @@
+[21-Jan-2021 19:37:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function BaconQrCode\Encoder\iconv() in /home/lagosepid/public_html/pdf/vendor/bacon/bacon-qr-code/src/Encoder/Encoder.php:595
+Stack trace:
+#0 /home/lagosepid/public_html/pdf/vendor/bacon/bacon-qr-code/src/Encoder/Encoder.php(511): BaconQrCode\Encoder\Encoder::append8BitBytes('https://lagosep...', Object(BaconQrCode\Common\BitArray), 'UTF-8')
+#1 /home/lagosepid/public_html/pdf/vendor/bacon/bacon-qr-code/src/Encoder/Encoder.php(76): BaconQrCode\Encoder\Encoder::appendBytes('https://lagosep...', Object(BaconQrCode\Common\Mode), Object(BaconQrCode\Common\BitArray), 'UTF-8')
+#2 /home/lagosepid/public_html/pdf/vendor/endroid/qr-code/src/QrCode.php(429): BaconQrCode\Encoder\Encoder::encode('https://lagosep...', Object(BaconQrCode\Common\ErrorCorrectionLevel), 'UTF-8')
+#3 /home/lagosepid/public_html/pdf/vendor/endroid/qr-code/src/Writer/PngWriter.php(30): Endroid\QrCode\QrCode->getData()
+#4 /home/lagosepid/public_html/pdf/vendor/endroid/qr-code/src/Writer/AbstractWriter.php(67): End in /home/lagosepid/public_html/pdf/vendor/bacon/bacon-qr-code/src/Encoder/Encoder.php on line 595
+[08-Feb-2021 06:39:27 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[08-Feb-2021 06:39:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[08-Feb-2021 06:39:32 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[08-Feb-2021 06:39:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[08-Feb-2021 06:39:38 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[08-Feb-2021 06:39:45 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/lagosepid/public_html/pdf/index.php on line 18
+[17-Mar-2021 00:05:38 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9885/8055349562): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 00:07:11 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9885/8055349562): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 06:48:51 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9272/9020114751): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 06:49:37 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9272/9020114751): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 06:51:32 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9272/9020114751): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 15:13:55 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9272/9020114751): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[17-Mar-2021 15:14:15 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/CHC_CV-SW_21_9272/9020114751): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[18-Mar-2021 15:24:15 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/UDCS_COV-2_FEB_0831/8059286595): failed to open stream: Connection timed out in /home/lagosepid/public_html/pdf/index.php on line 19
+[05-Apr-2021 11:58:26 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/MMS 26027/8037869827): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[05-Apr-2021 11:59:25 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/MMS 26027/8037869827): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[05-Apr-2021 11:59:40 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/MMS 26027/8037869827): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[05-Apr-2021 12:01:42 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/MMS 26027/8037869827): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[05-Apr-2021 12:01:47 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/MMS 26027/8037869827): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[27-Apr-2021 07:31:28 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/UDCS%2FCOV-2%2FAPR%2F0819/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[27-Apr-2021 07:31:52 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/UDCS%2FCOV-2%2FAPR%2F0819/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[28-Apr-2021 16:43:03 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/DW_21_2119/8186224847%2F07064174882): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[10-May-2021 13:19:44 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/AA_COV2_20_035_2832/09078081924+%2F+08037173280): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[21-May-2021 14:00:50 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/LEK15http%3A%2F%2Flagosepid.com%2Fpdf%2F%3Fid%3DLEK15602/08055271289): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[07-Jun-2021 16:31:50 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/LC_06_21_0274/234+906+534+4575%2F+447497390468): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19
+[07-Jun-2021 16:32:05 UTC] PHP Warning:  file_get_contents(https://lagosepid.com/api/app2/LC_06_21_0274/234+906+534+4575%2F+447497390468): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/lagosepid/public_html/pdf/index.php on line 19

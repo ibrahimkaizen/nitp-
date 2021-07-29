@@ -1,0 +1,12 @@
+name = Entity Reference Views Formatter
+description = Provides Views based entity reference field formatter.
+core = 7.x
+dependencies[] = entityreference
+dependencies[] = views
+
+; Information added by  packaging script on 2013-11-03
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "entityreference_views_formatter"
+datestamp = "1383511405"
+

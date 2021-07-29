@@ -1,0 +1,380 @@
+<?php 
+
+define('FLUTTERWAVE_SECRET', variable_get('nitp_flutterwave_secret'));
+define('FLUTTERWAVE_PUBLIC', variable_get('nitp_flutterwave_public'));
+define('BASE_URL', variable_get('nitp_base_url'));
+
+function nitp_menu() {
+    $items['cvdform/send-sms'] = array(
+        'page callback' => 'nitp_send_sms',
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+    );
+    $items['cvdform/complete/%'] = array(
+        'page callback' => 'nitp_payment_successful',
+        'page arguments' => array(2),
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+    );
+    
+    $items['cvdform/save-toses'] = array(
+        'page callback' => 'nitp_save_toses',
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+    );
+    $items['admin/config/nitp'] = array(
+        'title' => 'NITP Settings Form',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('nitp_vars'),
+        'type' => MENU_NORMAL_ITEM,
+        'access arguments' => array('access administration pages'),
+        'file' => 'nitp.pages.inc',
+    );
+    $items['make-payment/%'] = array(
+        'title' => 'Make Payment',
+        'page callback' => 'make_payment_page',
+        'page arguments' => array(1),
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+        'file' => 'nitp.pages.inc',
+    );
+    $items['api/pdf/%/paymentcomfirmed.json'] = array(
+        'title' => 'Make Payment',
+        'page callback' => 'paymentcomfirmed_pdfcontent',
+        'page arguments' => array(2),
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+        'file' => 'nitp.pages.inc',
+    );
+    $items['webhook/sms'] = array(
+        'title' => 'SMS Webhook',
+        'page callback' => 'sms_webhook',
+        'type' => MENU_NORMAL_ITEM,
+        'access callback' => TRUE,
+        'file' => 'nitp.pages.inc',
+    );
+    
+    return $items;
+}
+
+function nitp_send_sms() {
+    global $user;
+    $url = "http://132.145.231.191/V2NSMS/v1/push";
+    $sender = 'LAG BIOBANK';
+    $username = 'ayade';
+    $password = 'in5sENa_VN2ql1';
+    
+    $number = $_POST['phone'];
+    $email = $_POST['email'];
+    
+    $code = mt_rand(111111,999999);
+    $message = "Your authentication code is " . $code;
+    
+    
+    // Send Email
+    $to = $email;
+    $subject = "Verification Code";
+    $default_from = variable_get('site_mail', ini_get('sendmail_from'));
+    
+    drupal_mail(
+        'nitp', 
+        'nitp_mymail', 
+        $to, 
+        user_preferred_language($user),
+        array('body' => $message, 'subject' => $subject), 
+        $default_from,
+        TRUE
+    );
+    
+    $data = array(
+        "sms" => array(
+            array(
+                "id" => $code, 
+                "sender"=> $sender,
+                "receiver" => $number,
+                "message" => $message,
+            )
+        )
+    );
+    
+    $request = drupal_http_request(
+        $url,
+        array(
+            'method' => 'POST',
+            'headers' => array(
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Basic ' . base64_encode($username . ":" . $password)
+            ),
+            'data' => json_encode($data),
+        )
+    ); 
+    
+    /**$url = "https://smartrecharge.ng/api/v1/http.php?";
+    $new_number = "234".substr($number, 1);
+    $body = array(
+        'method' => 'GET',
+        'data' => array('api_key'=>'f87bd976', 'recipient'=>$new_number, 'message'=>$message, 'sender'=>'BULKSMS', 'route'=>2 )
+    );
+    
+    $request = drupal_http_request($url, $body);**/
+    
+    watchdog('nitp', json_encode($request));
+    
+    $query = db_select('sms_codes', 'n');
+    $query->condition('n.phone', $number);
+    $query->addField('n', 'phone');
+    $result = $query->execute()->fetchField();
+    if ($result) {
+        db_update('sms_codes')
+        ->fields(array(
+            'code' => $code,
+            'date' => date('Y-m-d H:i:s a'),
+        ))
+         ->condition('phone', $number)
+        ->execute();     
+    }else {
+        db_insert('sms_codes')
+        ->fields(array(
+            'code' => $code,
+            'phone' => $number,
+            'date' => date('Y-m-d H:i:s a'),
+        ))
+        ->execute(); 
+    }
+    
+    
+    
+   
+    
+    //http_response_code(200);
+    return drupal_json_output(["message" => $number]);
+}
+
+
+function nitp_payment_successful($nid){
+    $wrapper = entity_metadata_wrapper('node', $nid);
+    
+    $html = '';
+    
+    if (isset($_GET['transaction_id'])) {
+        $tx_ref = $_GET['transaction_id'];
+        $secret_key = FLUTTERWAVE_SECRET;
+    
+        $request = drupal_http_request(
+            "https://api.flutterwave.com/v3/transactions/" . $tx_ref . "/verify",
+            array(
+              "method" => "GET",
+              "headers" => array(
+                "Content-Type" => "application/json",
+                "Authorization" => "Bearer " . $secret_key
+              ),
+            )
+        );
+        
+        if ($request && $request->code == 200) {
+            $response = json_decode($request->data, true);
+            if ($response['status'] == 'success') {
+                $wrapper->field_payment_status->set(1);
+                $wrapper->save();
+                drupal_set_message('Your payment has been successfully received. Thank you.');
+                
+                db_delete('sms_codes')
+                    ->condition('phone', $wrapper->field_phone_number->value())
+                    ->condition('code', $wrapper->field_phone_verification_code->value())
+                    ->execute(); 
+                return $html;
+            } 
+        }
+        
+        drupal_set_message("Payment Invalid. Please try again later", "error");
+
+        $html .= $request->data;
+        
+    } else {
+        drupal_set_message("Payment cancelled. Please try again.", "error");
+    }
+    
+    $wrapper->field_payment_status->set(2);
+    $wrapper->save();
+    
+    $redirect_link = BASE_URL . 'cvdform/complete/'. $nid;
+    $retry_link = get_flutterwave_link(node_load($nid), $redirect_link);
+    
+    $html .= "<div class='text-center'><a href='" . $retry_link . "' class='btn btn-success'>Click here to try again</a></div>";
+    
+    return $html;
+}
+
+function nitp_save_toses(){
+    $email = $_POST['email'];
+    $_SESSION['nitp_guys']['email'] = $email;
+}
+
+function nitp_form_alter(&$form, &$form_state, $form_id) {
+    $bits = explode(",", variable_get("nitp_bit_countries"));
+    drupal_add_js(array('nitpjs' => array('bit_keys' => $bits)), 'setting');
+}
+
+function nitp_() {
+   
+
+}
+
+function nitp_file_validate($file) {
+    $errors = array();
+    if ($file) {
+        if ($file->source == 'field_group_member_info_und_0') {
+            $data = file($file->uri);
+            if(count($data) <=1 ) {
+                $errors[] = t('Uploaded CSV must contain users.');
+            }
+        }
+    }
+    return $errors;
+}
+  
+
+function nitp_node_validate($node, $form, &$form_state) {
+    if ($form['#form_id'] == 'nitp_form_node_form' && !isset($node->nid)){
+        $phone = $node->field_phone_number;
+        $code = $node->field_phone_verification_code;
+
+        $phone = $node->field_phone_number;
+        $code = $node->field_phone_verification_code;
+        if (isset($phone) && isset($code)) {
+            $phone_value = $phone['und'][0]['value'];
+            $code_value = $code['und'][0]['value'];
+            
+            $query = db_select('sms_codes', 'n');
+            $query->condition('n.phone', $phone_value);
+            $query->condition('n.code', $code_value);
+            $query->addField('n', 'code');
+            $result = $query->execute()->fetchField();
+            if (!$result) {
+                form_set_error('field_phone_verification_code', t('Invalid Verification Code. Please try again.'));
+            }
+        }
+        
+    }
+}
+
+
+
+function get_flutterwave_link($node, $redirect_url) {
+    $url = "https://api.flutterwave.com/v3/payments";
+    $wrapper = entity_metadata_wrapper('node', $node);
+
+    $reference = $wrapper->label() . '-' . date('y-m-d');
+    
+    $cur = $wrapper->field_preferred_currency->value();
+    
+    if ($cur == 1){
+        $currency = 'NGN';
+    } elseif ($cur == 2) {
+        $currency = 'USD';
+    } elseif ($cur == 3){
+        $currency = 'GBP';
+    } elseif ($cur == 4){
+        $currency = 'EUR';
+    }
+    
+    $secret_key = FLUTTERWAVE_SECRET;
+
+    $data = array(
+        "tx_ref" => $reference,
+        "amount" => $wrapper->field_bill->value(),
+        "currency"=> $currency,
+        "redirect_url" => $redirect_url,
+        "payment_options" => "card",
+        "customer" => array(
+            "email" => $wrapper->field_email->value(),
+            "phonenumber" => $wrapper->field_phone_number->value(),
+            "name" => $wrapper->label()
+        ),
+        "customizations" => array(
+              "logo" => BASE_URL . "sites/default/files/indexcoat.jpg"
+        )
+    );
+
+    $request = drupal_http_request(
+        $url,
+        array(
+          "method" => "POST",
+          "data" => json_encode($data),
+          "headers" => array(
+            "Content-Type" => "application/json",
+            "Authorization" => "Bearer " . $secret_key
+          ),
+        )
+      );
+    
+
+    if ($request && $request->code == 200) {
+        $response = json_decode($request->data, true);
+        return $response['data']['link'];
+    } else {
+        return null;
+    }
+
+  
+}
+  
+function nitp_mail($key, &$message, $params) {
+    if (isset($params['subject'])) {
+        $message['subject'] = $params['subject'];
+    } 
+    if (isset($params['body'])) {
+        $message['body'][] = $params['body']; 
+    }
+    if (isset($params['headers']) && is_array($params['headers'])) {   
+        $message['headers'] += $params['headers'];
+    }
+}
+
+
+function get_nitp_test_fee($amount, $currency){
+    if ($currency == 1) {
+        return $amount;
+    } elseif($currency == 2) {
+        return $amount / variable_get('nitp_dollar_rate');
+    }elseif($currency == 3) {
+        return $amount / variable_get('nitp_gbp_rate');
+    } elseif($currency == 4) {
+        return $amount / variable_get('nitp_euro_rate');
+    }
+}
+
+function get_nitp_currency_symbol($currency) {
+     if ($currency == 1) {
+      return "₦";
+    }elseif($currency == 2) {
+        return "$";
+    }elseif($currency == 3) {
+        return "£";
+    }elseif($currency == 4) {
+       return "€";
+    }
+}
+
+function get_nitp_processing_fee($fee, $currency) {
+    if ($currency == 1) {
+        return $fee * variable_get('nitp_naira_card_processing');
+    }else {
+        return $fee * variable_get('nitp_other_card_processing');
+    }
+    
+}
+
+function get_nitp_stamp_fee($currency) {
+    if ($currency == 1) {
+        return variable_get('nitp_stamp_duty');
+    }else {
+        return variable_get('nitp_stamp_duty_others');
+    }
+    
+}
+
+
+function get_taxonomy($id) {
+    return entity_metadata_wrapper('taxonomy_term', $id);
+}

@@ -1,0 +1,12 @@
+name = Deploy Managed Aggregator UI
+description = "Add a form for adding supported entities to managed aggregator plans"
+core = 7.x
+
+dependencies[] = deploy
+
+
+; Information added by Drupal.org packaging script on 2019-10-11
+version = "7.x-3.2"
+core = "7.x"
+project = "deploy"
+datestamp = "1570783088"

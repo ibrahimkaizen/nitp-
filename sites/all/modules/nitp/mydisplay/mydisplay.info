@@ -1,0 +1,8 @@
+name = JS Display
+description = display
+package = Custom
+
+core = 7.x
+
+
+scripts[] = js/mydisplay.js

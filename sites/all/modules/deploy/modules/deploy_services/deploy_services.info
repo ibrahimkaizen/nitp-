@@ -1,0 +1,16 @@
+name = Deployment services
+description = Manages deployment services
+package = Deployment
+core = 7.x
+
+dependencies[] = deploy
+dependencies[] = diff
+dependencies[] = services
+
+files[] = deploy_services.services.inc
+
+; Information added by Drupal.org packaging script on 2019-10-11
+version = "7.x-3.2"
+core = "7.x"
+project = "deploy"
+datestamp = "1570783088"

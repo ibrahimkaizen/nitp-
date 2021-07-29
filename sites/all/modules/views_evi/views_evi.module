@@ -1,0 +1,137 @@
+<?php
+/**
+ * @file
+ * Main file for the views_evi module with some utility functions.
+ *
+ * @todo Altering the exposed form should be done in the display extender as soon as it can alter the exposed form.
+ * Swapping out the exposed form plugin is not an option as the delegation pattern is a PITA
+ * in PHP as long as __call does not handle references.
+ *
+ * @todo Move form and value handling to plugins.
+ *
+ * @todo Move tokens to plugins.
+ *
+ * @todo Provide field tokens and alter the query so they are unquoted.
+ */
+
+/**
+ * Implements hook_permission().
+ * @return array
+ */
+function views_evi_permission() {
+  return array(
+    'use php for views_evi' =>  array(
+      'title' => t('Use PHP for Views EVI settings'),
+      'restrict access' => TRUE,
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function views_evi_views_api() {
+    $path = drupal_get_path('module', 'views_evi') . '/views';
+    return array(
+      'api' => '3.0',
+      'path' => $path,
+    );
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for views_exposed_form.
+ *
+ * Hides exposed filter forms.
+ *
+ * @param $form
+ * @param $form_state
+ */
+function views_evi_form_views_exposed_form_alter(&$form, &$form_state) {
+
+  $display = $form_state['display'];
+  /** @var ViewsEviDisplayExtender $views_evi */
+  if (isset($display->handler->extender['views_evi'])) {
+    $views_evi = $display->handler->extender['views_evi'];
+    $views_evi->viewsEviExposedFormAlter($form, $form_state);
+  }
+}
+
+/**
+ * Implements hook_views_pre_view().
+ *
+ * Injects exposed filter values.
+ *
+ * @param view $view
+ * @param string $display_id
+ * @param array $args
+ */
+function views_evi_views_pre_view(&$view, &$display_id, &$args) {
+  /** @var ViewsEviDisplayExtender $views_evi */
+  if (isset($view->display[$display_id]->handler->extender['views_evi'])) {
+    $views_evi = $view->display[$display_id]->handler->extender['views_evi'];
+    $views_evi->viewsEviPreView();
+  }
+}
+
+/**
+ * Get default plugin class.
+ *
+ * @return array
+ */
+function views_evi_plugin_types() {
+  $plugin_types['value'] = array(
+    'label' => t('Value'),
+    'default_class' => 'ViewsEviValueForm',
+  );
+  $plugin_types['visibility'] = array(
+    'label' => t('Visibility'),
+    'default_class' => 'ViewsEviVisibilityYes',
+  );
+  return $plugin_types;
+}
+
+/**
+ * Get plugin list.
+ *
+ * @param $plugin_type
+ * @return mixed
+ */
+function views_evi_plugin_labels($plugin_type) {
+  $cache = &drupal_static(__FUNCTION__);
+  if (!isset($cache[$plugin_type])) {
+
+    ctools_include('plugins');
+    $plugin_infos = ctools_get_plugins('views_evi', $plugin_type);
+
+    $plugin_options = array();
+    foreach($plugin_infos as $plugin_id => $plugin_info) {
+      $plugin_options[$plugin_id] = $plugin_info['label'];
+    }
+
+    $cache[$plugin_type] = $plugin_options;
+  }
+  return $cache[$plugin_type];
+}
+
+/**
+ * Implements hook_ctools_plugin_type().
+ */
+function views_evi_ctools_plugin_type() {
+  $info = array(
+    'cache' => TRUE,
+    'use hooks' => FALSE,
+  );
+  return array(
+    'value' => $info,
+    'visibility' => $info,
+  );
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function views_evi_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'views_evi') {
+    return "views_evi/$plugin";
+  }
+}

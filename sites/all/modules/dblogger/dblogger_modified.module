@@ -1,0 +1,16 @@
+<?php
+
+function dblogger_views_post_render(&$view, &$output, &$cache) {
+    if ($view->name == 'testing_entity_overview' && $view->current_display == 'page_33') {
+        $params = drupal_get_query_parameters();
+        //if ($params['msisdn'] && $params['network']) {
+            db_insert('vas2net_ussd')
+                ->fields(array(
+                    'msisdn' => $params['msisdn'],
+                    'network' => $params['network'],
+                    'date' => date('Y-m-d H:i:s a'),
+                ))
+                ->execute();
+        //}
+    }
+}

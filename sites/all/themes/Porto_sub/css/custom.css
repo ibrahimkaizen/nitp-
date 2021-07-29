@@ -1,0 +1,474 @@
+/*=======================================================================
+*** PORTO_SUB STYLE SHEET***
+========================================================================*/
+@media (min-width: 996px) {
+	.region-header-menu {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 15px 10px 1px;
+	}
+}
+@media all and (max-width: 768px) {
+
+	.node-outbound-form{width: 100% !important; margin-left: 0px !important;}
+	.node-nitp_form-form{width: 100% !important; margin-left: 0px !important;}
+	.node-article-form{
+	width: 100% !important;
+	margin-left: 0px !important;
+}
+	.node-nitp_form-form .form-wrapper {
+	width: 100% !important;
+	}
+
+	.page-top h2{font-size: 18px;}
+
+	.node-outbound-form .form-wrapper {
+	width: 100% !important;
+	}
+
+	.node-nitp_form-form .field-name-field-flight-no {
+	  margin-left: 0px !important;
+	}
+	.node-nitp_form-form .fieldset-wrapper .field-type-interval{
+	width: 45% !important;
+	}
+	.node-outbound-form .fieldset-wrapper .field-type-interval{
+	/*width: 45% !important;*/
+	}
+	.homecenterbtn{
+	padding: 5px 15px  !important;
+	font-size: 15px !important;
+	}
+	.homecenter h4{font-size: 15px !important; text-align: center;}
+	.homecenter{top: 30% !important;}
+	.homecenter2{top: 37% !important;}
+}
+
+.node-nitp_form-form .fieldset-wrapper .field-type-text {
+	width: 43%;
+	float: left;
+	margin-right: 20px;
+}
+
+.node-outbound-form .fieldset-wrapper .field-type-text {
+	width: 43%;
+	float: left;
+	margin-right: 20px;
+}
+
+
+.node-nitp_form-form .fieldset-wrapper .field-type-list-integer {
+	width: 43%;
+	float: left;
+	margin-right: 20px;
+} 
+
+.node-outbound-form .fieldset-wrapper .field-type-list-integer {
+	width: 43%;
+	float: left;
+	margin-right: 20px;
+} 
+
+.node-nitp_form-form .form-type-radio {
+	float: left;
+	margin-right: 5px;
+	width: 30%;
+	margin-top: 0px;
+}
+
+.node-outbound-form .form-type-radio {
+	float: left;
+	margin-right: 5px;
+	width: 25%;
+	margin-top: 0px;
+}
+
+.node-nitp_form-form .form-type-radios label{float: none; margin-left: 5px;}
+.node-outbound-form .form-type-radios label{float: none; margin-left: 5px;}
+
+.node-nitp_form-form .form-radio{float: left;}
+.node-outbound-form .form-radio{float: left;}
+
+.node-nitp_form-form .field-type-taxonomy-term-reference{width: 45%; float: left; margin-right: 10px;}
+.node-outbound-form .field-type-taxonomy-term-reference{width: 45%; float: left;}
+
+.node-outbound-form .field-name-field-laboratory-nitp{width: 44%; margin-right: 10px;}
+.node-nitp_form-form .form-type-select label {
+	display: none;
+}
+
+.node-outbound-form  .form-type-select label {
+	display: none;
+}
+
+.node-nitp_form-form .form-item-field-diplomatic-passport-und {
+	display: inline-block;
+}
+.chosen-container-single .chosen-single{height: 30px; padding: 5px 0 0 8px;}
+
+.node-nitp_form-form .fieldset-wrapper .field-type-email {
+	width: 43%;
+	float: left;
+	margin-right: 19px;
+}
+
+.node-outbound-form .fieldset-wrapper .field-type-email {
+	width: 43%;
+	float: left;
+	margin-right: 19px;
+}
+
+.node-nitp_form-form .form-type-date-popup {width: 100%;}
+.node-outbound-form .form-type-date-popup {width: 100%;}
+
+.node-nitp_form-form .form-type-date-popup .date-padding {width: 100%;}
+.node-outbound-form .form-type-date-popup .date-padding {width: 100%;}
+
+.node-nitp_form-form .form-type-date-popup .form-type-textfield {width: 100%;}
+.node-outbound-form .form-type-date-popup .form-type-textfield {width: 100%;}
+
+.node-nitp_form-form .form-type-date-popup .form-text{width: 100%;}
+.node-outbound-form .form-type-date-popup .form-text{width: 100%;}
+
+.node-nitp_form-form .form-type-date-popup label{display: none;}
+.node-outbound-form .form-type-date-popup label{display: none;}
+
+
+.node-nitp_form-form .fieldset-wrapper .field-type-datetime{
+	width: 43%;
+	float: left;
+	margin-right: 10px;
+}
+
+.node-outbound-form .fieldset-wrapper .field-type-datetime{
+	width: 44%;
+	float: left;
+	margin-right: 10px;
+}
+
+.node-nitp_form-form .fieldset-wrapper .field-type-interval{
+	width: 21.5%;
+	float: left;
+	margin-right: 10px;
+}
+
+.node-outbound-form .field-type-interval{
+	width: 45%;
+	float: left;
+	margin-right: 10px;
+}
+
+.node-outbound-form .field-type-interval .form-item {
+	/* width: 21.5%; */
+	float: left;
+	margin-right: 10px;
+}
+
+.node-nitp_form-form .fieldset-wrapper .field-name-field-arrival-location{
+	width: 43%;
+	margin-right: 10px;
+}
+
+.node-outbound-form .fieldset-wrapper .field-name-field-arrival-location{
+	width: 44%;
+	margin-right: 10px;
+}
+
+.node-nitp_form-form .fieldset-wrapper .field-type-interval label{
+	/*display: none;*/
+}
+
+.form-item .description{font-size: 0.65em;}
+
+.group-p1, .group-p2, .group-p3,.group-p4,.group-p5,.group-p6,.group-p7,.group-p8, .group-p9, .group-p10 {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.group-p1 legend, .group-p2 legend, .group-p3 legend,.group-p4 legend,.group-p5 legend,.group-p6 legend,.group-p7 legend,.group-p8 legend, .group-p9 legend, .group-p10  legend{
+
+	display: none;
+}
+
+.group-p11, .group-p12, .group-p13,.group-p14,.group-p15,.group-p16,.group-p17,.group-p18, .group-p19, .group-p20, .group-p21,.group-p22, .group-p23 {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.group-p11 legend, .group-p12 legend, .group-p13 legend,.group-p14 legend,.group-p15 legend,.group-p16 legend,.group-p17 legend,.group-p18 legend, .group-p19 legend, .group-p20  legend, .group-p21  legend, .group-p22  legend, .group-p23  legend{
+	display: none;
+}
+.group-pc1, .group-pc2, .group-pc3 {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.group-pc1 legend, .group-pc2 legend, .group-pc3 legend{
+
+	display: none;
+}
+.chosen-container-single .chosen-single{
+
+/*	background-color: #fcfcfc;
+	border: 2px solid #eaeaea;
+	border-radius: 3px;
+	min-height: 30px;
+	box-shadow: none;
+	width: 98%;
+	color: #808080;*/
+	border: none;
+}
+
+.form-item-field-covid-test-country2-und .chosen-container-single{width: 98% !important;}
+
+.form-item-field-state-in-nigeria-und .chosen-container-single{width: 98% !important;}
+
+.form-item,  {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+.node-nitp_form-form .field-name-field-flight-no{margin-left: 10px;}
+
+.node-nitp_form-form .field-name-field-arrival-date2{margin-left: 10px;}
+
+.multipage-pane-title{font-size: 19px;}
+
+.multipage-controls-list input.form-submit{background: green;color: #fff; text-shadow: none;}
+.form-submit.multipage-link-previous {
+	background-color: orange !important;
+}
+
+#field-destinations-in-nigeria-values label {display: block;}
+
+#edit_field_destinations_in_nigeria_und_0_field_state_in_nigeria_und_chosen {
+	width: 100% !important;
+	padding-right: 15px;
+}
+
+.field-name-field-destinations-in-nigeria .form-item {
+	margin-top: 0.7em !important;
+	margin-bottom: 0.7em !important;
+}
+
+.node-nitp_form-form .field-name-field-resident{width: 100%;}
+
+.node-nitp_form-form .field-name-field-covid-test-state2 {
+	width: 43%;
+	margin-right: 20px;
+}
+
+.field-name-field-destinations-in-nigeria .remove-button{padding: 3px 5px;}
+.field-name-field-destinations-in-nigeria .field-add-more-submit{padding: 3px 5px;}
+.form-item-field-result-pdf-und-0 .form-submit{padding: 3px 5px;}
+
+.node-nitp_form-form .date-no-float{width: 100% !important;}
+
+.node-nitp_form-form .form-item-field-hotel-isolation-center-und  .form-type-radio{width: 100%;}
+
+
+#article-node-form .field-type-taxonomy-term-reference{width: 98%;}
+#article-node-form .form-item-field-country-und .chosen-container-single{width: 100% !important;}
+#article-node-form .form-item-field-city-state-und .chosen-container-single{width: 100% !important;}
+#article-node-form .form-item-field-terminal-und .chosen-container-single{width: 100% !important;}
+#article-node-form .form-item-field-country2-und .chosen-container-single{width: 100% !important;}
+
+#article-node-form .form-item-field-city-state-und select{width: 98% !important;}
+
+.ui-accordion .ui-accordion-icons{background: none;}
+.ui-state-default{border: none;}
+
+.ui-state-active a{font-weight: bold;}
+.ui-state-active {
+	border: 1px solid #aaa;
+}
+
+.mygroup-numbering {
+	padding: 3px 5px 5px 7px;
+	background-color:  rgba(0,0,0,.54);
+	color: #fff;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+}
+
+.ui-state-active .mygroup-numbering{background-color: orange;}
+.ui-state-default.ui-accordion-icons:hover {
+	background-color: #ccc !important;
+}
+.node-nitp_form-form .btn-info{
+	color: #000;
+	background-color: #fff;
+	border-color: #fff;
+}
+.form-item .error {
+	font-size: 10px;
+	margin-top: 1px;
+}
+
+.lab-info {
+	box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+	border-left: 4px solid #ffc108;
+	font-size: 11px;
+	width: 90%;
+}
+.lab-info p{margin: 5px;}
+
+.ui-accordion .ui-accordion-content{min-height: 200px;}
+
+.mypreview {
+	background-color: #fff;
+	color: #999;
+	/* width: 90%; */
+}
+.mypreview h2{font-size: 20px;}
+.mypreview h4{font-size: 15px; font-weight: unset;}
+.mypreview-label{font-weight: bold;}
+
+.pay-now-button{color: #fff;background-color: #942b32;padding: 6px 9px;font-size: 14px;min-width: 64px;box-sizing: border-box;font-weight: normal;line-height: 1.75;border-radius: 4px;text-transform: none;text-decoration: none;display: inline-flex;position: relative;align-items: center;justify-content: center;transition: transform 0.3s;}
+
+.pay-now-button a{color: #fff;font-size: 10px;}
+#edit_field_countries_visited_in_the_l_und_chosen {
+	width: 95% !important;
+}
+.field-type-taxonomy-term-reference .chosen-container-single {
+	width: 98% !important;
+}
+
+#sendvc {
+	color: red;
+}
+
+.node-outbound-form{width: 75%; margin-left: 100px;}
+.node-nitp_form-form {width: 75%; margin-left: 100px;}
+
+.form-wrapper .form-select, .field-type-taxonomy-term-reference .form-select {
+	background-color: #fcfcfc;
+	border: 2px solid #eaeaea;
+	border-radius: 3px;
+	min-height: 30px;
+	box-shadow: none;
+	width: 98%;
+	color: #808080;
+	
+}
+
+table{
+	width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+ th, td {
+    padding: 12px 15px;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+ tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+#site-name {
+	font-size: 20px;
+}
+#site-name a{
+	color: #d00;
+	text-decoration: none;
+}
+
+body.sticky-menu-active header #site-name {
+	margin: 20px 0px -10px 0px;
+	font-size: 22px;
+}
+
+.node-article-form{
+	width: 60%;
+	margin-left: 200px;
+}
+
+.region-before-content{ position: relative;}
+
+
+.homecenter {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.homecenter2 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.homecenterbtn{
+	background-color: orange !important;
+	border-color: orange !important;
+	padding: 5px 15px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.homecenterbtn a{color: #fff;}
+
+#article-node-form{
+	padding: 30px;
+	border: 1px solid rgba(219, 220, 224, 0.5);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+} 
+
+.form-item-field-are-you-returning-to-niger-und {
+	padding: 17px 21px;
+	background-color: rgba(228, 163, 91, 0.1);
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.header2 #header {
+	background-image: linear-gradient(90deg,#222,rgba(34,34,34,0)),url("../images/black-covid.jpg");
+	min-height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.homemain{
+	background-image: url("../images/home3.png");
+	height: 70vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

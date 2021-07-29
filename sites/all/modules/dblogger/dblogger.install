@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function dblogger_schema() {
+  $schema['vas2net_ussd'] = array(
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'msisdn' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+      'network' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+      'date' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}
+
+
+function dblogger_uninstall() {
+  variable_del('dblogger_time_slot');
+}
+

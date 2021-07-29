@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function nitp_schema() {
+  $schema['sms_codes'] = array(
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'code' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+      'phone' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+      'date' => array(
+        'type' => 'text',
+        'size' => 'small',
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}
+

@@ -1,0 +1,9 @@
+name = Chartman2
+description = chartman module2
+package = Custom
+
+core = 7.x
+
+dependencies[] = chartman
+
+scripts[] = 'js/chartman2.js'

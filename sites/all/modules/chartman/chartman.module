@@ -1,0 +1,1368 @@
+<?php
+
+/**
+ * @file
+ * chartman module.
+ */
+
+define('CHARTMAN_BASEURL', 'https://lagosepid.com/');
+
+
+function get_stuff($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  if ($nodes) {
+    $tested = $nodes[0]['node']['tested'];
+    $positive = trim($nodes[0]['node']['positive']);
+    $percent = $tested > 0 ? $positive/$tested : 0;
+    return [round(($percent)*100, 1), $tested, $positive];
+  } else {
+    return [0, 0, 0];
+  }
+}
+
+function reveal_content($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  return $nodes;
+}
+
+function options() {
+  $name = 'test_type_initial_repeat_followup_';
+  $myvoc = taxonomy_vocabulary_machine_name_load($name);
+  $tree = taxonomy_get_tree($myvoc->vid);
+  $options = ['all' =>'All'];
+  foreach ($tree as $term) {
+    $options[$term->name] = $term->name;
+  }
+  return $options;
+}
+
+function chartman_block_info() {
+
+  $blocks['task_1'] = array(
+    'info' => t('Task 1'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['task_1_b'] = array(
+    'info' => t('Task 1b'),
+  );
+  $blocks['task_2'] = array(
+    'info' => t('Task 2'),
+  );
+  $blocks['task_2_2'] = array(
+    'info' => t('Task 2.2'),
+  );
+  $blocks['task_3'] = array(
+    'info' => t('Task 3'),
+  );
+  $blocks['task_5'] = array(
+    'info' => t('Task 5'),
+  );
+  $blocks['task_6'] = array(
+    'info' => t('Task 6'),
+  );
+  $blocks['task_7'] = array(
+    'info' => t('Task 7'),
+  );
+  $blocks['task_8'] = array(
+    'info' => t('Task 8'),
+  );
+  $blocks['task_9'] = array(
+    'info' => t('Task 9'),
+  );
+  $blocks['task_10'] = array(
+    'info' => t('Task 10'),
+  );
+  $blocks['task_12'] = array(
+    'info' => t('Task 12: Test Postivity [1A]'),
+  );
+  $blocks['task_12b'] = array(
+    'info' => t('Task 12b'),
+  );
+  $blocks['task_15'] = array(
+    'info' => t('Task 15: Current 24 hr Lab Operating Capacity'),
+  );
+  $blocks['task_16'] = array(
+    'info' => t('Task 16: Proportion of this weeks samples'),
+  );
+  $blocks['task_17'] = array(
+    'info' => t('Task 17: Weekly'),
+  );
+  return $blocks;
+}
+
+
+
+function chartman_block_view($delta=''){
+  $block = array();
+
+  switch ($delta) {
+    case 'task_1':
+      $block['content'] = array(
+        '#markup' => task_1_content(),
+      );
+      break;
+
+    case 'task_1_b':
+      $block['content'] = array(
+        '#markup' => task_1_b_content(),
+      );
+      break;
+
+    case 'task_2':
+      $block['content'] = array(
+        '#markup' => task_2_content(),
+      );
+      break;
+
+    case 'task_2_2':
+      $block['content'] = array(
+        '#markup' => task_2_2_content(),
+      );
+      break;
+
+    case 'task_3':
+      $content = drupal_get_form('task_3_content');
+      $block['content'] = array(
+        "form" => $content,
+      );
+      break;
+
+    case 'task_5':
+      $block['content'] = array(
+        '#markup' => task_5_content(),
+      );
+      break;
+
+    case 'task_6':
+      $block['content'] = array(
+        '#markup' => task_6_content(),
+      );
+      break;
+    case 'task_7':
+      $block['content'] = array(
+        '#markup' => task_7_content(),
+      );
+      break;
+    case 'task_8':
+      $block['content'] = array(
+        '#markup' => task_8_content(),
+      );
+      break;
+    case 'task_9':
+      $block['content'] = array(
+        '#markup' => task_9_content(),
+      );
+      break;
+    case 'task_10':
+      $content = drupal_get_form('task_10_content');
+      $block['content'] = array(
+        'form' => $content,
+      );
+      break;
+    case 'task_12':
+      $block['content'] = array(
+        'form' => drupal_get_form('task_12_content'),
+      );
+      break;
+    case 'task_12b':
+      $block['content'] = array(
+        'form' => drupal_get_form('task_12b_content'),
+      );
+      break;
+    case 'task_15':
+      $block['content'] = array(
+        '#markup' => task_15_content(),
+      );
+      break;
+    case 'task_16':
+      $block['content'] = array(
+        '#markup' => task_16_content(),
+      );
+      break;
+    case 'task_17':
+      $block['content'] = array(
+        '#markup' => task_17_content(),
+      );
+      break;
+  }
+
+  return $block;
+
+}
+
+
+function task_1_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/pie';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $a = $b = [];
+
+  foreach ($nodes as $node) {
+    $a[] = $node['node']['labname'];
+    $b[] = trim($node['node']['yesterday']);
+  }
+
+  $canvas = '<canvas id="task_1_a"></canvas>';
+
+  drupal_add_js(array(
+    'task_1' => array(
+      'label' => $a,
+      'data_a' => $b,
+    ),
+  ), 'setting');
+
+  return $canvas;
+}
+
+function task_1_b_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/pie';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $a = $c = [];
+
+  foreach ($nodes as $node) {
+    $a[] = $node['node']['labname'];
+    $c[] = $node['node']['cumulative'];
+  }
+
+  $canvas = '<canvas id="task_1_b"></canvas>';
+
+  drupal_add_js(array(
+    'task_1_b' => array(
+      'label' => $a,
+      'data_b' => $c,
+    ),
+  ), 'setting');
+
+  return $canvas;
+}
+
+function task_2_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/block';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $a = $b = $c = [];
+
+  foreach ($nodes as $node) {
+    $a[] = $node['node']['labname'];
+    $b[] = trim($node['node']['yesterday']);
+    $c[] = $node['node']['dtarget'];
+  }
+
+  $canvas = '<div>
+  <canvas id="task_2_a"></canvas>
+  </div>';
+
+  drupal_add_js(array(
+    'task_2' => array(
+      'label' => $a,
+      'data' => array(
+        array(
+          "type" => "bar",
+          "label" => "Yesterday",
+          "data" => $b,
+          "backgroundColor" => "red",
+          #'barThickness' => 14,
+        ),
+        array(
+          "type" => "bar",
+          "label" => "Daily Target",
+          "data" => $c,
+          "backgroundColor" => "#1C4E80",
+          #'barThickness' => 14,
+        ),
+      ),
+    ),
+  ), 'setting');
+
+  return $canvas;
+}
+
+function task_2_2_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/block';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $cc = ['#6A5ACD', '#CE1713', '#00BA6D', '#FFC944',"#B3C100", "#CED2CC", "#23282D", "#4CB5F5", "#1F3F49", "#D32D41", "#6AB187", "#000000", "#AC3E31", "#484848", "#DBAE58", "#DADADA", "#20283E", "#488A99","#F1F1F1", "#202020", "#7E909A", "#1C4E80", "#A5D8DD", "#EA6A47", "#0091D5", "#F3904F", "#F9C8A9", "#B4B4B4", "#FFC944", "#5588C9", "#AA842A", "#80B866" ];
+  $a = $b = $colors = [];
+  $i = 0;
+  foreach ($nodes as $key=> $node) {
+    $a[] = $node['node']['labname'];
+    $trgt = $node['node']['dtarget'];
+    if ($trgt) {
+      $b[] = (trim($node['node']['yesterday'])/$trgt) * 100;
+    }else {
+      $b[] = trim($node['node']['yesterday']);
+    }
+    $colors[] = $cc[$i];
+    $i ++;
+  }
+
+  $canvas = '<div>
+  <canvas id="task_2_2"></canvas>
+  </div>';
+
+  drupal_add_js(array(
+    'task_2_2' => array(
+      'label' => $a,
+      'data' => array(
+        array(
+          "data" => $b,
+          "backgroundColor" => $colors,
+        ),
+      )
+    ),
+  ), 'setting');
+
+  return $canvas;
+}
+
+function task_3_content($form, &$form_state) {
+    $default_start = !empty($form_state['values']['start_date_3']) ? $form_state['values']['start_date_3'] : date('Y-m-d',  strtotime("today - 1 month"));
+    $form['start_date_3'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_start,
+      '#attributes' => array('placeholder' => t('Start date')),
+      '#date_label_position' => 'within',
+      '#title' => 'Start Date',
+    );
+
+    $default_end = !empty($form_state['values']['end_date_3']) ? $form_state['values']['end_date_3'] : date('Y-m-d', strtotime('today'));
+    $form['end_date_3'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_end,
+      '#attributes' => array('placeholder' => t('End date')),
+      '#date_label_position' => 'within',
+      '#title' => 'End Date',
+    );
+
+    if (arg(0) == 'admin'){
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+      );
+    }else {
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+        '#ajax' => array(
+          'callback' => 'task_3_form_callback',
+          'wrapper' => 'checkboxes-div',
+        ),
+      );
+    }
+
+    $form['page_3'] = array(
+      '#prefix' => '<div id="checkboxes-div">',
+      '#suffix' => '</div>',
+      '#markup' => task_3_page($default_start, $default_end),
+    );
+
+    return $form;
+}
+
+function task_3_form_callback($form, $form_state){
+  $element = $form['page_3'];
+  $start = $form_state['values']['start_date_3'];
+  $end = $form_state['values']['end_date_3'];
+  $element['#markup'] = task_3_page($start, $end);
+  return $element;
+}
+
+function task_3_first($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $data = $a = [];
+
+  foreach ($nodes as $node) {
+    $a[$node['node']['date_tested']][$node['node']['lab']] = array(
+      'date' => $node['node']['date_tested'],
+      'lab' => $node['node']['lab'],
+      'nid' => $node['node']['nid'],
+    );
+    $data[$node['node']['lab']] = array(
+      "label" => $node['node']['lab'],
+    );
+
+  }
+
+  foreach ($a as $dd => $value) {
+    foreach ($data as $key => $v) {
+      if (array_key_exists($key, $value)) {
+        $data[$key]['data'][] = (int) $value[$key]['nid'];
+      }else {
+        $data[$key]['data'][] = 0;
+      }
+    }
+  }
+  $colors = ['#6A5ACD', '#CE1713', '#00BA6D', '#FFC944',"#B3C100", "#CED2CC", "#23282D", "#4CB5F5", "#1F3F49", "#D32D41", "#6AB187", "#000000", "#AC3E31", "#484848", "#DBAE58", "#DADADA", "#20283E", "#488A99","#F1F1F1", "#202020", "#7E909A", "#1C4E80", "#A5D8DD", "#EA6A47", "#0091D5", "#F3904F", "#F9C8A9", "#B4B4B4", "#FFC944", "#5588C9", "#AA842A", "#80B866" ];
+  $newdata = [];
+  $i = 0;
+  foreach ($data as $key => $value) {
+    $value["backgroundColor"] = $colors[$i];
+    $newdata[] = $value;
+    $i++;
+  }
+
+  drupal_add_js(array(
+    'task_3' => array(
+      'label' => array_keys($a),
+      'data' => $newdata,
+    ),
+  ), 'setting');
+
+  return '<div><canvas id="task_3_a"></canvas></div>';
+
+}
+
+function task_3_second($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $data = $a = [];
+
+  foreach ($nodes as $node) {
+    $a[$node['node']['date_tested']][$node['node']['test_type']] = array(
+      'date' => $node['node']['date_tested'],
+      'test_type' => $node['node']['test_type'],
+      'count' => $node['node']['count'],
+    );
+    $data[$node['node']['test_type']] = array(
+      "label" => $node['node']['test_type'],
+    );
+
+  }
+
+  foreach ($a as $dd => $value) {
+    foreach ($data as $key => $v) {
+      if (array_key_exists($key, $value)) {
+        $data[$key]['data'][] = (int) $value[$key]['count'];
+      }else {
+        $data[$key]['data'][] = 0;
+      }
+    }
+  }
+  $colors = ['#00BA6D', '#6A5ACD', '#CE1713', '#FFC944',"#B3C100", "#CED2CC", "#23282D", "#4CB5F5", "#1F3F49", "#D32D41", "#6AB187", "#000000", "#AC3E31", "#484848", "#DBAE58", "#DADADA", "#20283E", "#488A99","#F1F1F1", "#202020", "#7E909A", "#1C4E80", "#A5D8DD", "#EA6A47", "#0091D5", "#F3904F", "#F9C8A9", "#B4B4B4", "#FFC944", "#5588C9", "#AA842A", "#80B866"];
+  $newdata = [];
+  $i = 0;
+  foreach ($data as $key => $value) {
+    $value["backgroundColor"] = $colors[$i];
+    $newdata[] = $value;
+    $i++;
+  }
+
+  $canvas = '<div>
+  <canvas id="task_4"></canvas>
+  </div>';
+
+  drupal_add_js(array(
+    'task_4' => array(
+      'label' => array_keys($a),
+      'data' => $newdata,
+    ),
+  ), 'setting');
+
+  return $canvas;
+}
+
+
+function task_3_page($start, $end) {
+  $url = CHARTMAN_BASEURL . 'api/days/lab2x/'.$start . '--' . $end;
+  $url2 = CHARTMAN_BASEURL . 'api/days/testingtype2x/'.$start . '--' . $end;
+  return task_3_first($url) .  task_3_second($url2);
+
+}
+
+
+
+function task_5_content() {
+  //Test Type Overview
+  $url = CHARTMAN_BASEURL . 'api/testtype/overview';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  return theme(
+    'task_5_content',
+    [
+      'items' => $nodes
+    ]
+  );
+}
+
+function task_6_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/overview';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  $yes = $cum = 0;
+  foreach ($nodes as $key => $value) {
+    $yes += str_replace(',', '', trim($value['node']['Yesterday']));
+    $cum += str_replace(',', '', trim($value['node']['Cumulative']));
+  }
+
+  return theme(
+    'task_6_content',
+    [
+      'items' => $nodes,
+      'yes_total' => $yes,
+      'cum_total' => $cum,
+    ]
+  );
+}
+
+function task_7_content() {
+  $url = CHARTMAN_BASEURL . 'api/lab/yesterday/testtype';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  $arr = $total = [];
+  foreach ($nodes as $key => $value) {
+    $total[$value['node']['labname']] = $value['node']['dtarget'];
+    $arr[$value['node']['labname']][$value['node']['test_type']] = array(
+      'count' => $value['node']['count']
+    );
+    $arr[$value['node']['labname']]['dtarget'] = $value['node']['dtarget'];
+  }
+
+  $total = array_sum($total);
+
+  $items = [];
+  foreach ($arr as $key => $value) {
+    $initial = (isset($value['INITIAL'])) ? $value['INITIAL']['count'] : 0;
+    $repeat =(isset($value['REPEAT'])) ? $value['REPEAT']['count'] : 0;
+    $followup = (isset($value['FOLLOW-UP'])) ? $value['FOLLOW-UP']['count'] : 0;
+    $missing = (isset($value['Missing'])) ? $value['Missing']['count'] : 0;
+    $total = $initial + $repeat + $followup + $missing;
+    $dtarget = $value['dtarget'];
+    $percent = ($dtarget > 0) ? ($total/$dtarget)*100 : 0;
+
+    $items[] = array(
+      "label"=> $key,
+      "initial" => $initial,
+      "repeat" => $repeat,
+      "followup" => $followup,
+      "missing" => $missing,
+      "total" => $total,
+      'target' => $dtarget,
+      "perc" => round($percent, 1),
+    );
+  };
+
+  return theme(
+    'task_7_content',
+    [
+      'items' => $items,
+    ]
+  );
+}
+
+function task_8_content() {
+  $url_1 = CHARTMAN_BASEURL . 'api/10days/testtype';
+  $url_2 = CHARTMAN_BASEURL . 'api/10days/positive';
+  $url_3 = CHARTMAN_BASEURL . 'api/10days/pp';
+
+  function loader($url){
+    /* This function gets content from passed url and rearranged */
+    $json = drupal_http_request($url);
+    $obj = json_decode($json->data, true);
+    $nodes = $obj['nodes'];
+
+
+    $arr = $total = [];
+    foreach ($nodes as $key => $value) {
+      $arr[$value['node']['date_tested']][$value['node']['test_type']] = array(
+        'count' => $value['node']['nid']
+      );
+    }
+    $items = [];
+    foreach ($arr as $key => $value) {
+      $initial = (isset($value['INITIAL'])) ? $value['INITIAL']['count'] : 0;
+      $repeat =(isset($value['REPEAT'])) ? $value['REPEAT']['count'] : 0;
+      $followup = (isset($value['FOLLOW-UP'])) ? $value['FOLLOW-UP']['count'] : 0;
+      $missing = (isset($value['Missing'])) ? $value['Missing']['count'] : 0;
+      $total = $initial + $repeat + $followup + $missing;
+
+      $items[] = array(
+        "label"=> $key,
+        "initial" => $initial,
+        "repeat" => $repeat,
+        "followup" => $followup,
+        "missing" => $missing,
+        "total" => $total,
+      );
+    };
+    return $items;
+  }
+
+  function loader_2($url) {
+    /* Gets content in url and rearranged */
+    $json = drupal_http_request($url);
+    $obj = json_decode($json->data, true);
+    $nodes = $obj['nodes'];
+
+    $arr = $total = [];
+    foreach ($nodes as $key => $value) {
+      $arr[$value['node']['date_tested']][$value['node']['pp']] = array(
+        'count' => $value['node']['nid']
+      );
+    }
+    $items = [];
+    foreach ($arr as $key => $value) {
+      $public = (isset($value['Public'])) ? $value['Public']['count'] : 0;
+      $private =(isset($value['Private'])) ? $value['Private']['count'] : 0;
+      $total = $public + $private;
+
+      $items[] = array(
+        "label"=> $key,
+        "public" => $public,
+        "private" => $private,
+        "total" => $total,
+      );
+    };
+    return $items;
+  }
+
+  $node_1 = loader($url_1);
+  $node_2 = loader($url_2);
+  $node_3 = loader_2($url_3);
+
+  return theme(
+    'task_8_content',
+    [
+      'table_1' => $node_1,
+      'table_2' => $node_2,
+      'table_3' => $node_3,
+    ]
+  );
+}
+
+function task_9_content() {
+  $url = CHARTMAN_BASEURL . 'api/lga/overview';
+  $json = drupal_http_request($url);
+  if ($json->data) {
+    $obj = json_decode($json->data, true);
+    $nodes = $obj['nodes'];
+
+    $yes = $cum = 0;
+    foreach ($nodes as $key => $value) {
+      $yes += str_replace(',', '', trim($value['node']['Yesterday']));
+      $cum += str_replace(',', '', trim($value['node']['Cumulative']));
+    }
+  } else {
+    $nodes = [];
+    $yes = '';
+    $cum = '';
+  }
+
+
+  return theme(
+    'task_9_content',
+    [
+      'items' => $nodes,
+      'yes_total' => $yes,
+      'cum_total' => $cum,
+    ]
+  );
+}
+
+
+
+
+function task_10_content($form, &$form_state) {
+    $options = options();
+    $default_start = !empty($form_state['values']['category_10']) ? $form_state['values']['category_10'] : 'all';
+    $form['category_10'] = array(
+      '#type' => 'select',
+      '#options' => $options,
+      '#default_value' => $default_start,
+      '#title' => 'Categories',
+    );
+
+    if (arg(0) == 'admin'){
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+      );
+    }else {
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+        '#ajax' => array(
+          'callback' => 'task_10_form_callback',
+          'wrapper' => 'task10page',
+        ),
+      );
+    }
+
+    $form['page_10'] = array(
+      '#prefix' => '<div id="task10page">',
+      '#suffix' => '</div>',
+      '#markup' => task_10_page($default_start),
+    );
+
+    return $form;
+}
+
+function task_10_form_callback($form, $form_state){
+  $element = $form['page_10'];
+  $cat = $form_state['values']['category_10'];
+  $element['#markup'] = task_10_page($cat);
+  return $element;
+}
+
+function task_10_view($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $labs = $below = $exact = $above = [];
+  $a_total = $b_total = $c_total = $total_total = 0;
+
+  foreach ($nodes as $key => $value) {
+    $labs[] = $value['node']['labname'];
+    $a = str_replace(',', '', trim($value['node']['below-24hrs']));
+    $b= str_replace(',', '', trim($value['node']['24-48hrs']));
+    $c = str_replace(',', '', trim($value['node']['Above48hrs']));
+    $total = $a + $b + $c;
+
+    $below[] = ($total > 0) ? round(($a/$total)* 100, 1) : $total;
+    $exact[] = ($total > 0) ? round(($b/$total)* 100, 1) : $total;
+    $above[] = ($total > 0) ? round(($c/$total)* 100, 1) : $total;
+    $a_total += $a;
+    $b_total += $b;
+    $c_total += $c;
+    $total_total += $total;
+  }
+
+  drupal_add_js(array(
+    'task_10' => array(
+      'label' => $labs,
+      'data' => array(
+        array(
+          'label' => 'Within 24hrs',
+          'data' => $below,
+          'backgroundColor' => '#00BA6D',
+          #'barThickness'	=> 10,
+        ),
+        array(
+          'label' => '24-48hrs',
+          'data' => $exact,
+          'backgroundColor' => '#FFC944',
+          #'barThickness'	=> 10,
+        ),
+        array(
+          'label' => 'Beyond 48hrs',
+          'data' => $above,
+          'backgroundColor' => '#CE1713',
+          #'barThickness'	=> 10,
+        ),
+      ),
+    ),
+  ), 'setting');
+
+  $overall = round(($a_total/$total_total)*100, 1);
+
+  return '<p class="asyoulike">24Hr TAT : '. $overall .'</p>
+  <p class="asyoulike">No of records: '. $total_total . '</p>
+  <canvas id="task_10" height="200"></canvas>
+  ';
+
+}
+
+function task_11_view($url) {
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  $labs = $below = $exact = $above = [];
+  $a_total = $b_total = $c_total = $total_total = 0;
+
+  foreach ($nodes as $key => $value) {
+    $labs[] = $value['node']['labname'];
+    $a = str_replace(',', '', trim($value['node']['below-24hrs']));
+    $b= str_replace(',', '', trim($value['node']['24-48hrs']));
+    $c = str_replace(',', '', trim($value['node']['Above48hrs']));
+    $total = $a + $b + $c;
+
+    $below[] = ($total > 0) ? round(($a/$total)* 100, 1) : $total;
+    $exact[] = ($total > 0) ? round(($b/$total)* 100, 1) : $total;
+    $above[] = ($total > 0) ? round(($c/$total)* 100, 1) : $total;
+    $a_total += $a;
+    $b_total += $b;
+    $c_total += $c;
+    $total_total += $total;
+  }
+
+
+  drupal_add_js(array(
+    'task_11' => array(
+      'label' => $labs,
+      'data' => array(
+        array(
+          'label' => 'Within 24hrs',
+          'data' => $below,
+          'backgroundColor' => '#00BA6D',
+          #'barThickness' => 10,
+        ),
+        array(
+          'label' => '24-48hrs',
+          'data' => $exact,
+          'backgroundColor' => '#FFC944',
+          #'barThickness' => 10,
+        ),
+        array(
+          'label' => 'Beyond 48hrs',
+          'data' => $above,
+          'backgroundColor' => '#CE1713',
+          #'barThickness' => 10,
+        ),
+      ),
+    ),
+  ), 'setting');
+
+  $overall = ($total_total > 0) ? round(($a_total/$total_total)*100, 1) : 0;
+
+  return '<p class="asyoulike">24Hr TAT : ' . $overall . '</p>
+  <p class="asyoulike">No of records: ' . $total_total . '</p>
+  <canvas id="task_11" height="200"></canvas>
+  ';
+
+}
+
+function task_10_page($cat) {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/tat/cum/'.$cat;
+  $url2 = CHARTMAN_BASEURL . 'api/laboratory/tat/week/'.$cat;
+  return task_10_view($url) .  task_11_view($url2);
+
+}
+
+
+
+
+
+
+
+function task_12_content($form, &$form_state) {
+    $default_start = !empty($form_state['values']['start_date_12']) ? $form_state['values']['start_date_12'] : date('Y-m-d',  strtotime("today - 1 month"));
+    $form['start_date_12'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_start,
+      '#attributes' => array('placeholder' => t('Start date')),
+      '#date_label_position' => 'within',
+      '#title' => 'Start Date',
+    );
+
+    $default_end = !empty($form_state['values']['end_date_12']) ? $form_state['values']['end_date_12'] : date('Y-m-d', strtotime('today'));
+    $form['end_date_12'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_end,
+      '#attributes' => array('placeholder' => t('End date')),
+      '#date_label_position' => 'within',
+      '#title' => 'End Date',
+    );
+
+    $cat = !empty($form_state['values']['category_12']) ? $form_state['values']['category_12'] : 'all';
+    $form['category_12'] = array(
+      '#type' => 'select',
+      '#options' => options(),
+      '#default_value' => $cat,
+      '#title' => 'Categories',
+    );
+
+    if (arg(0) == 'admin'){
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+      );
+    }else {
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+        '#ajax' => array(
+          'callback' => 'task_12_form_callback',
+          'wrapper' => 'task12page',
+        ),
+      );
+    }
+
+    $form['page_12'] = array(
+      '#prefix' => '<div id="task12page">',
+      '#suffix' => '</div>',
+      '#markup' => task_12_page($cat, $default_start, $default_end),
+    );
+
+    return $form;
+}
+
+function task_12_form_callback($form, $form_state){
+  $element = $form['page_12'];
+  $cat = $form_state['values']['category_12'];
+  $start = $form_state['values']['start_date_12'];
+  $end = $form_state['values']['end_date_12'];
+  $element['#markup'] = task_12_page($cat, $start, $end);
+  return $element;
+}
+
+function task_12_view($nodes) {
+  $labels = $tested = $percent = [];
+
+  $total_tested = 0;
+  foreach($nodes as $key => $value) {
+    $total_tested += str_replace(',', '', trim($value['node']['tested']));
+  }
+
+  foreach ($nodes as $key => $value) {
+    $labels[] = $value['node']['date-tested'];
+    $positive = str_replace(',', '', trim($value['node']['positive']));
+    $tested  = str_replace(',', '', trim($value['node']['tested']));
+    $tests[] = $tested;
+    $percent[] = round(($positive / $tested)*100);
+  }
+
+  drupal_add_js(array(
+    'task_12' => array(
+      'label' => $labels,
+      'data' => array(
+        array(
+          'type' => 'line',
+          'yAxisID' => 'B',
+          'label' => 'Test Positivity',
+          'data' => $percent,
+          'borderWidth' => 2,
+				  'fill' => false,
+          'borderColor' => '#CE1713',
+        ),
+        array(
+          'type' => 'bar',
+          'yAxisID' => 'A',
+          'label' => 'Tested',
+          'data' => $tests,
+          'backgroundColor' => '#0086C6',
+          #'barThickness' => 10,
+        )
+      ),
+    ),
+  ), 'setting');
+
+  $l24hr = CHARTMAN_BASEURL . "api/tpr/total/yes";
+  $thisweek = CHARTMAN_BASEURL . "api/tpr/total/thisweek";
+  $cummulative = CHARTMAN_BASEURL . "api/tpr/total/cum";
+
+  return '<p class="asyoulike">Last 24 hr : ' . get_stuff($l24hr)[0] . '</p><p class="asyoulike">This Week: ' . get_stuff($thisweek)[0] . '</p><p class="asyoulike">Cummulative: ' . get_stuff($cummulative)[0] . '</p> <div><canvas id="task_12"></canvas></div>';
+
+
+}
+
+function task_13_view($nodes) {
+  $labels = $positive = $negative = [];
+
+  foreach ($nodes as $key => $value) {
+    $labels[] = $value['node']['date-tested'];
+    $po = str_replace(',', '', trim($value['node']['positive']));
+    $tested  = str_replace(',', '', trim($value['node']['tested']));
+    $positive[] = $po;
+    $negative[] = $tested - $po;
+  }
+  drupal_add_js(array(
+    'task_13' => array(
+      'label' => $labels,
+      'data' => array(
+        array(
+          'label' => 'Positive',
+          'data' => $positive,
+          'backgroundColor' => '#CE1713',
+          #'barThickness'	=> 10,
+        ),
+        array(
+          'label' => 'Negative',
+          'data' => $negative,
+          'backgroundColor' => '#0086C6',
+          #'barThickness' => 10,
+        )
+      ),
+    ),
+  ), 'setting');
+
+  return '<div><canvas id="task_13"></canvas></div>';
+}
+
+function task_14_view($nodes) {
+  $labels = $arr = $tested = [];
+
+  foreach ($nodes as $key => $value) {
+    $labels[] = $value['node']['date-tested'];
+    $tested[] = str_replace(',', '', trim($value['node']['tested']));
+    $arr[]  = array(
+      'tested' => str_replace(',', '', trim($value['node']['tested'])),
+      'positive' => str_replace(',', '', trim($value['node']['positive'])),
+    );
+  }
+
+  function moving_avg($key, $arr, $type) {
+    $tt = function($x){ return $x['tested']; };
+    $pp = function($x){return $x['positive']; };
+    $start = ($key < 4) ? $key : $key - 4;
+    if ($type == 'tested') {
+      return array_sum(array_map($tt, array_slice($arr, $start, 5)));
+    }else {
+      return array_sum(array_map($pp, array_slice($arr, $start, 5)));
+    }
+  }
+
+  foreach ($arr as $key => $value) {
+    $five_positive = moving_avg($key, $arr, 'positive');
+    $five_tested = moving_avg($key, $arr, 'tested');
+    $moving_average[] = ($five_tested > 0) ? ($five_positive / $five_tested)*100 : 0;
+
+  }
+
+  drupal_add_js(array(
+    'task_14' => array(
+      'label' => $labels,
+      'data' => array(
+        array(
+          'type' => 'line',
+          'yAxisID' => 'B',
+          'label' => 'Test Positivity',
+          'data' => $moving_average,
+          'borderWidth' => 2,
+				  'fill' => false,
+          'borderColor' => '#CE1713',
+        ),
+        array(
+          'type' => 'bar',
+          'yAxisID' => 'A',
+          'label' => 'Tested',
+          'data' => $tested,
+          'backgroundColor' => '#0086C6',
+          #'barThickness' => 10,
+        )
+      ),
+    ),
+  ), 'setting');
+
+  return '<div><canvas id="task_14"></canvas></div>';
+}
+
+function task_12_page($cat, $start, $end) {
+  $url = CHARTMAN_BASEURL . 'api/tpr/total/'. $start . '--' . $end . '/' . $cat;
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  return task_12_view($nodes) .  task_13_view($nodes) .  task_14_view($nodes);
+}
+
+
+
+
+function task_12b_content($form, &$form_state) {
+  $default_start = !empty($form_state['values']['start_date_12b']) ? $form_state['values']['start_date_12b'] : date('Y-m-d',  strtotime("today - 1 month"));
+  $form['start_date_12b'] = array(
+    '#type' => 'date_popup',
+    '#date_format' => 'Y-m-d',
+    '#default_value' => $default_start,
+    '#attributes' => array('placeholder' => t('Start date')),
+    '#date_label_position' => 'within',
+    '#title' => 'Start Date',
+  );
+
+  $default_end = !empty($form_state['values']['end_date_12b']) ? $form_state['values']['end_date_12b'] : date('Y-m-d', strtotime('today'));
+  $form['end_date_12b'] = array(
+    '#type' => 'date_popup',
+    '#date_format' => 'Y-m-d',
+    '#default_value' => $default_end,
+    '#attributes' => array('placeholder' => t('End date')),
+    '#date_label_position' => 'within',
+    '#title' => 'End Date',
+  );
+
+
+
+  $cat = !empty($form_state['values']['category_12b']) ? $form_state['values']['category_12b'] : 'all';
+  $form['category_12b'] = array(
+    '#type' => 'select',
+    '#options' => options(),
+    '#default_value' => $cat,
+    '#title' => 'Categories',
+  );
+
+  if (arg(0) == 'admin'){
+    $form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => t('Filter'),
+    );
+  }else {
+    $form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => t('Filter'),
+      '#ajax' => array(
+        'callback' => 'task_12b_form_callback',
+        'wrapper' => 'task12bpage',
+      ),
+    );
+  }
+
+  $form['page_12b'] = array(
+    '#prefix' => '<div id="task12bpage">',
+    '#suffix' => '</div>',
+    '#markup' => task_12b_page($cat, $default_start, $default_end),
+  );
+
+  return $form;
+}
+
+function task_12b_form_callback($form, $form_state){
+  $element = $form['page_12b'];
+  $cat = $form_state['values']['category_12b'];
+  $start = $form_state['values']['start_date_12b'];
+  $end = $form_state['values']['end_date_12b'];
+  $element['#markup'] = task_12b_page($cat, $start, $end);
+  return $element;
+}
+
+function task_12b_view($nodes) {
+  $labels = $tested = $percent = [];
+
+  $total_tested = 0;
+  foreach($nodes as $key => $value) {
+    $total_tested += str_replace(',', '', trim($value['node']['tested']));
+  }
+  $tests = [];
+
+  foreach ($nodes as $key => $value) {
+    $labels[] = $value['node']['date-tested'];
+    $positive = str_replace(',', '', trim($value['node']['positive']));
+    $tested  = str_replace(',', '', trim($value['node']['tested']));
+    $tests[] = $tested;
+    $percent[] = round(($positive / $tested)*100, 1);
+  }
+
+  if ($percent && $tested && $labels) {
+    drupal_add_js(array(
+      'task_12b' => array(
+        'label' => $labels,
+        'data' => array(
+          array(
+            'type' => 'line',
+            'yAxisID' => 'B',
+            'label' => 'Test Positivity',
+            'data' => $percent,
+            'borderWidth' => 2,
+            'fill' => false,
+            'borderColor' => '#CE1713',
+          ),
+          array(
+            'type' => 'bar',
+            'yAxisID' => 'A',
+            'label' => 'Tested',
+            'data' => $tests,
+            'backgroundColor' => '#0086C6',
+            #'barThickness' => 10,
+          )
+        ),
+      ),
+    ), 'setting');
+  }
+
+  $l24hr = CHARTMAN_BASEURL . "api/tpr/total/yes/poi";
+  $thisweek = CHARTMAN_BASEURL . "api/tpr/total/thisweek/poi";
+  $cummulative = CHARTMAN_BASEURL . "api/tpr/total/cum/poi";
+
+  $tf = get_stuff($l24hr);
+  $wf = get_stuff($thisweek);
+  $cf = get_stuff($cummulative);
+
+  return '<p class="asyoulike">Last 24 hr (Total) : ' . $tf[1] . '</p>
+  <p class="asyoulike">Last 24 hr (Tested - TPR) : ' . $tf[0] . '%</p>
+  <p class="asyoulike">This Week (Total): ' . $wf[1] . '</p>
+  <p class="asyoulike">This Week (Tested - TPR): ' . $wf[0] . '%</p>
+  <p class="asyoulike">Cummulative (Total): ' . $cf[1] . '</p>
+  <p class="asyoulike">Cummulative (Tested - TPR): ' . $cf[0] . '%</p> <div><canvas id="task_12b"></canvas></div>';
+
+}
+
+function task_12b_page($cat, $start, $end) {
+  $url = CHARTMAN_BASEURL . 'api/tpr/total/poi/'. $start . '--' . $end . '/' . $cat;
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  return task_12b_view($nodes);
+}
+
+
+
+
+
+
+
+
+
+function task_15_content() {
+  $url = CHARTMAN_BASEURL . 'api/total-tests-yesterday';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+  $yesterday = $nodes[0]['node']['tests-yesterday'];
+
+  $url2 = CHARTMAN_BASEURL . 'api/dailytarget/total';
+  $json2 = drupal_http_request($url2);
+  $obj2 = json_decode($json2->data, true);
+  $nodes2 = $obj2['nodes'];
+  $today = $nodes2[0]['node']['total_dtarget'];
+
+  $value = round(($yesterday / $today)*100, 2);
+
+  return theme(
+    'task_15_content',
+    [
+      'value' => $value,
+    ]
+  );
+
+}
+
+function task_16_content() {
+  $url = CHARTMAN_BASEURL . 'api/laboratory/tat/week';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  $a_total = $b_total = $c_total = $total_total = 0;
+
+  foreach ($nodes as $key => $value) {
+    $a = str_replace(',', '', trim($value['node']['below-24hrs']));
+    $b= str_replace(',', '', trim($value['node']['24-48hrs']));
+    $c = str_replace(',', '', trim($value['node']['Above48hrs']));
+    $total = $a + $b + $c;
+    $a_total += $a;
+    $total_total += $total;
+  }
+
+  $fs = ($total_total > 0) ? round(($a_total/$total_total)*100, 1) : 0;
+
+  return theme(
+    'task_16_content',
+    [
+      'value' => $fs,
+    ]
+  );
+
+}
+
+function task_17_content() {
+  $url = CHARTMAN_BASEURL . 'api/tpr/total/weekly';
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $nodes = $obj['nodes'];
+
+  $labels = $tested = $percent = [];
+
+  foreach ($nodes as $key => $value) {
+    $labels[] = $value['node']['date-tested'];
+    $positive = str_replace(',', '', trim($value['node']['positive']));
+    $tested  = str_replace(',', '', trim($value['node']['tested']));
+    $tests[] = $tested;
+    $percent[] = round(($positive / $tested)*100);
+  }
+
+  drupal_add_js(array(
+    'task_17' => array(
+      'label' => $labels,
+      'data' => array(
+        array(
+          'type' => 'line',
+          'yAxisID' => 'B',
+          'label' => 'Test Positivity',
+          'data' => $percent,
+          'borderWidth' => 2,
+				  'fill' => false,
+          'borderColor' => '#CE1713',
+        ),
+        array(
+          'type' => 'bar',
+          'yAxisID' => 'A',
+          'label' => 'Tested',
+          'data' => $tests,
+          'backgroundColor' => '#0086C6',
+          #'barThickness' => 10,
+        )
+      ),
+    ),
+  ), 'setting');
+
+
+  return '<div><canvas id="task_17"></canvas></div>';
+
+
+}
+
+
+function chartman_theme() {
+  $arrays = [];
+
+  $arrays['task_5_content'] = array(
+    'variables' => array(
+      'items' => NULL,
+      ),
+    'template' => 'templates/test_type_overview',
+  );
+  $arrays['task_6_content'] = array(
+    'variables' => array(
+      'items' => NULL,
+      'yes_total' => NULL,
+      'cum_total' => NULL,
+      ),
+    'template' => 'templates/lab_overview',
+  );
+  $arrays['task_7_content'] = array(
+    'variables' => array(
+      'items' => NULL,
+      ),
+    'template' => 'templates/previous_day_sample',
+  );
+  $arrays['task_8_content'] = array(
+    'variables' => array(
+      'table_1' => NULL,
+      'table_2' => NULL,
+      'table_3' => NULL,
+      ),
+    'template' => 'templates/task_8',
+  );
+  $arrays['task_9_content'] = array(
+    'variables' => array(
+      'items' => NULL,
+      'yes_total' => NULL,
+      'cum_total' => NULL,
+      ),
+    'template' => 'templates/lga',
+  );
+  $arrays['task_15_content'] = array(
+    'variables' => array(
+      'value' => NULL,
+      ),
+    'template' => 'templates/task_15',
+  );
+  $arrays['task_16_content'] = array(
+    'variables' => array(
+      'value' => NULL,
+      ),
+    'template' => 'templates/task_16',
+  );
+
+  return $arrays;
+
+}

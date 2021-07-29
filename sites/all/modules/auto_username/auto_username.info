@@ -1,0 +1,11 @@
+name = Automatic User Names
+description = Allows a user's username to be assigned based on tokens or api hook.
+dependencies[] = token
+core = 7.x
+configure = admin/config/people/accounts/patterns
+
+; Information added by Drupal.org packaging script on 2019-02-10
+version = "7.x-1.1"
+core = "7.x"
+project = "auto_username"
+datestamp = "1549826898"

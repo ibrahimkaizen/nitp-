@@ -1,0 +1,8 @@
+name = NCDC
+description = NCDC module
+package = Custom
+
+core = 7.x
+
+dependencies[] = rules
+

@@ -1,0 +1,9 @@
+name = Chartman
+description = chartman module
+package = Custom
+
+core = 7.x
+
+scripts[] = 'js/Chart.bundle.min.js'
+scripts[] = 'js/chartmanbase.js'
+scripts[] = 'js/chartman.js'

@@ -1,0 +1,598 @@
+<?php
+
+/**
+ * @file
+ * chartman2 module.
+ */
+
+function cc(){
+  return ['#6A5ACD', '#CE1713', '#00BA6D', '#FFC944',"#B3C100", "#CED2CC", "#23282D", "#4CB5F5", "#1F3F49", "#D32D41", "#6AB187", "#000000", "#AC3E31", "#484848", "#DBAE58", "#DADADA", "#20283E", "#488A99","#F1F1F1", "#202020", "#7E909A", "#1C4E80", "#A5D8DD", "#EA6A47", "#0091D5", "#F3904F", "#F9C8A9", "#B4B4B4", "#FFC944", "#5588C9", "#AA842A", "#80B866" ];
+}
+
+
+function chartman2_block_info() {
+
+  $blocks['chartman2_task1'] = array(
+    'info' => t('Chartman2 Task 1'),
+  );
+  $blocks['chartman2_task2'] = array(
+    'info' => t('Chartman2 Task 2'),
+  );
+  $blocks['chartman2_task3'] = array(
+    'info' => t('Chartman2 Task 3'),
+  );
+  $blocks['chartman2_task4'] = array(
+    'info' => t('Chartman2 Task 4'),
+  );
+  $blocks['chartman2_task5'] = array(
+    'info' => t('Chartman2 Task 5'),
+  );
+
+  return $blocks;
+}
+
+
+
+function chartman2_block_view($delta=''){
+  $block = array();
+
+  switch ($delta) {
+    case 'chartman2_task1':
+      $block['content'] = array(
+        'form' => drupal_get_form('chartman2_form', 1),
+      );
+      break;
+
+    case 'chartman2_task2':
+      $block['content'] = array(
+        'form' => drupal_get_form('chartman2_form', 2),
+      );
+      break;
+
+    case 'chartman2_task3':
+      $block['content'] = array(
+        'form' => drupal_get_form('chartman2_form', 3),
+      );
+      break;
+    case 'chartman2_task4':
+      $block['content'] = array(
+        'form' => drupal_get_form('chartman2_form', 4),
+      );
+      break;
+    case 'chartman2_task5':
+      $block['content'] = array(
+        'form' => drupal_get_form('chartman2_form', 5),
+      );
+      break;
+  }
+
+  return $block;
+}
+
+function chartman2_form($form, &$form_state, $id) {
+    $default_start = !empty($form_state['values']['start_date']) ? $form_state['values']['start_date'] : date('Y-m-d',  strtotime("today - 1 month"));
+    $form['start_date'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_start,
+      '#attributes' => array('placeholder' => t('Start date')),
+      '#date_label_position' => 'within',
+      '#title' => 'Start Date',
+    );
+
+    $default_end = !empty($form_state['values']['end_date']) ? $form_state['values']['end_date'] : date('Y-m-d', strtotime('today'));
+    $form['end_date'] = array(
+      '#type' => 'date_popup',
+      '#date_format' => 'Y-m-d',
+      '#default_value' => $default_end,
+      '#attributes' => array('placeholder' => t('End date')),
+      '#date_label_position' => 'within',
+      '#title' => 'End Date',
+    );
+
+    if (arg(0) == 'admin'){
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+      );
+    }else {
+      $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Filter'),
+        '#ajax' => array(
+          'callback' => 'chartman2_task2_form_callback',
+          'wrapper' => 'checkboxes-div',
+        ),
+      );
+    }
+
+    if ($id == 1) {
+      $markup = 'chartman2_task1_page';
+    }elseif ($id == 2) {
+      $markup = 'chartman2_task2_page';
+    }elseif ($id == 3) {
+      $markup = 'chartman2_task3_page';
+    }elseif ($id == 4) {
+      $markup = 'chartman2_task4_page';
+    }elseif ($id == 5) {
+      $markup = 'chartman2_task5_page';
+    }
+
+    $form['id'] = array(
+      '#type' => 'hidden',
+      '#value' => $markup,
+    );
+
+    $form['page'] = array(
+      '#prefix' => '<div id="checkboxes-div">',
+      '#suffix' => '</div>',
+      '#markup' => $markup($default_start, $default_end),
+    );
+
+    return $form;
+}
+
+function chartman2_task2_form_callback($form, $form_state){
+  $fct = $form_state['values']['id'];
+  $element = $form['page'];
+  $start = $form_state['values']['start_date'];
+  $end = $form_state['values']['end_date'];
+  $element['#markup'] = $fct($start, $end);
+  return $element;
+}
+
+
+function chartman2_task1_page($start, $end) {
+  $url = CHARTMAN_BASEURL . 'api/casecontact/no/'.$start . '--' . $end;
+  $bjson = drupal_http_request($url);
+  $bobj = json_decode($bjson->data, true);
+  $x = $bobj['nodes'][0]['node']['count'];
+
+  $url2 = CHARTMAN_BASEURL . 'api/casecontact/yes/'.$start . '--' . $end;
+  $cjson = drupal_http_request($url2);
+  $cobj = json_decode($cjson->data, true);
+  $y = $cobj['nodes'][0]['node']['count'];
+
+  $sum = $x + $y; 
+  $xperc = $x/$sum *100;
+  $yperc = $y/$sum *100;
+
+
+  $c = [['Yes', $x, round($xperc)], ['No', $y, round($yperc)]];
+
+  return theme(
+    'chartman2_task1',
+    [
+      'c' => $c,
+      'total' => [$sum, $xperc+$yperc],
+    ]
+  );
+
+
+}
+
+
+function chartman2_task2_page($start, $end) {
+  /* PIE CHART */
+  $curl = CHARTMAN_BASEURL . 'api/genderdistribution/'.$start . '--' . $end;
+  $cjson = drupal_http_request($curl);
+  $cobj = json_decode($cjson->data, true);
+
+  /* A */
+  $label = $data = [];
+  if ($cobj['nodes']) {
+    foreach ($cobj['nodes'] as $key => $value) {
+      $label[] = $value['node']['gender']; 
+      $data[] = str_replace(',', '', $value['node']['count']); 
+    }
+  }
+  drupal_add_js(array(
+    'chartman2_task2a' => array(
+      'label' => $label,
+      'data' => $data,
+    ),
+  ), 'setting');
+
+
+  /* B Pyramid*/
+  $purl = CHARTMAN_BASEURL . 'api/genderagerange/'.$start . '--' . $end;
+  $pjson = drupal_http_request($purl);
+  $pobj = json_decode($pjson->data, true);
+  $x = [];
+  foreach ($pobj['nodes'] as $key => $value) {
+    $x[$value['node']['agerange']][$value['node']['gender']] = $value['node']['count'];
+  }
+  $label = array_keys($x);
+  $male = array_map(function($a){return str_replace(',', '', $a['Male']);}, $x);
+  $female = array_map(function($a){return -(str_replace(',', '', $a['Female']));}, $x);
+  
+  drupal_add_js(array(
+    'chartman2_task2b' => array(
+      'label' => $label,
+      'data' => [
+        [
+          'label' => 'Male', 
+          'stack' => "Stack 0",
+          'data' => array_values($male),
+          'backgroundColor' => "#d41111",
+        ],
+        [
+          'label' => 'Female', 
+          'stack' => "Stack 0",
+          'data' => array_values($female),
+          'backgroundColor' => "#3765b0",
+
+        ],
+      ]
+    ),
+  ), 'setting');
+
+
+  /* C */
+  $c1 = [];
+  if ($cobj['nodes']) {
+    $csum = array_sum(array_map(function($x){ 
+      return str_replace(',', '', $x['node']['count']);
+    }, $cobj['nodes']));
+    $csum2 = 0;
+    foreach ($cobj['nodes'] as $key => $value) {
+      $count = str_replace(',', '', $value['node']['count']); 
+      $tsum = ($count / $csum) * 100;
+      $c1[] = array(
+        'age' => $value['node']['gender'],
+        'number' => $value['node']['count'],
+        'percent' => number_format($tsum),
+      );
+      $csum2 += $tsum;
+    }
+  }
+  $c = [$c1, $csum, $csum2];
+
+
+  /* D */
+  $url = CHARTMAN_BASEURL . 'api/agerange/'.$start . '--' . $end;
+  $json = drupal_http_request($url);
+  $obj = json_decode($json->data, true);
+  $d1 = [];
+  if ($obj['nodes']) {
+    $sum = array_sum(array_map(function($x){ 
+      return str_replace(',', '', $x['node']['count']);
+    }, $obj['nodes']));
+    $sum2 = 0;
+    foreach ($obj['nodes'] as $key => $value) {
+      $count = str_replace(',', '', $value['node']['count']); 
+      $tsum = ($count / $sum) * 100;
+      $d1[] = array(
+        'age' => $value['node']['agerange'],
+        'number' => $value['node']['count'],
+        'percent' => number_format($tsum),
+      );
+      $sum2 += $tsum;
+    }
+  }
+  $d = [$d1, $sum, $sum2];
+
+  return theme(
+    'chartman2_task2',
+    [
+      'c' => $c,
+      'd' => $d,
+    ]
+  );
+
+}
+
+
+function chartman2_task3_page($start, $end) {
+  /* A pie chart */
+  $burl = CHARTMAN_BASEURL . 'api/symptomatic/pie/'.$start . '--' . $end;
+  $bjson = drupal_http_request($burl);
+  $cobj = json_decode($bjson->data, true);
+  $label = $data = []; 
+  if ($cobj['nodes']) {
+    foreach ($cobj['nodes'] as $key => $value) {
+      $label[] = trim($value['node']['symptom']);
+      $data[] = trim($value['node']['count']);
+    }
+  }
+  drupal_add_js(array(
+    'chartman2_task3a' => array(
+      'label' => $label,
+      'data' => $data,
+    ),
+  ), 'setting');
+
+
+  /* B Stacked bar */
+  $burl = CHARTMAN_BASEURL . 'api/symptomatic/'.$start . '--' . $end;
+  $bjson = drupal_http_request($burl);
+  $cobj = json_decode($bjson->data, true);
+  $label = $count = $rng = []; 
+  if ($cobj['nodes']) {
+    foreach ($cobj['nodes'] as $key => $value) {
+      $label[] = trim($value['node']['gender']);
+      $count[] = trim($value['node']['count']);
+      $rng[] = trim($value['node']['agerange']);
+    }
+  }
+  drupal_add_js(array(
+    'chartman2_task3b' => array(
+      'label' => $label,
+      'data' => [
+        array(
+          'label' => 'Count',
+          'data' => $count,
+        ),
+        array(
+          'label' => 'Age Range',
+          'data' => $rng,
+        )
+      ]
+    ),
+  ), 'setting');
+
+  /* C Pie chart */
+  $burl = CHARTMAN_BASEURL . 'api/s-combo/'.$start . '--' . $end . '/positive';
+  $bjson = drupal_http_request($burl);
+  $cobj = json_decode($bjson->data, true);
+  $label = $data = []; 
+  if ($cobj['nodes'][0]['node']) {
+    foreach ($cobj['nodes'][0]['node'] as $key => $value) {
+      $label[] = $key;
+      $data[] = trim($value);
+    }
+  }
+  drupal_add_js(array(
+    'chartman2_task3c' => array(
+      'label' => $label,
+      'data' => $data,
+    ),
+  ), 'setting');
+
+  /* D Pie chart */
+  $daurl = CHARTMAN_BASEURL . 'api/preexisting/yes/'.$start . '--' . $end;
+  $ajson = drupal_http_request($daurl);
+  $aobj = json_decode($ajson->data, true);
+  $x = $aobj['nodes'][0]['node']['count'];
+  $dburl = CHARTMAN_BASEURL . 'api/preexisting/all/'.$start . '--' . $end;
+  $bjson = drupal_http_request($dburl);
+  $bobj = json_decode($bjson->data, true);
+  $y = $bobj['nodes'][0]['node']['count'];
+  $a = number_format($x/$y * 100);
+  
+  drupal_add_js(array(
+    'chartman2_task3d' => array(
+      'label' => ['Yes', 'No'],
+      'data' => [$a, 100-$a],
+    ),
+  ), 'setting');
+
+
+  /* E Bar chart */
+  $burl = CHARTMAN_BASEURL . 'api/commonunderlying/'.$start . '--' . $end;
+  $bjson = drupal_http_request($burl);
+  $cobj = json_decode($bjson->data, true);
+  $label = $data = $colors = []; 
+  if ($cobj['nodes']) {
+    $i = 0;
+    $cc = cc();
+    foreach ($cobj['nodes'] as $key => $value) {
+      $label[] = trim($value['node']['underlying']);
+      $data[] = trim($value['node']['count']);
+      $colors[] = $cc[$i];
+      $i++;
+    }
+  }
+  drupal_add_js(array(
+    'chartman2_task3e' => array(
+      'label' => $label,
+      'data' => array(
+        array(
+          "data" => $data,
+          "backgroundColor" => $colors,
+        ),
+      )
+    ),
+  ), 'setting');
+
+
+
+  return theme(
+    'chartman2_task3',
+    []
+  );
+
+}
+
+
+
+
+function chartman2_task4_page($start, $end) {
+  /* A pie chart */
+  $daurl = CHARTMAN_BASEURL . 'api/pregnancy/yes/'.$start . '--' . $end;
+  $ajson = drupal_http_request($daurl);
+  $aobj = json_decode($ajson->data, true);
+  $x = $aobj['nodes'][0]['node']['count'];
+  $dburl = CHARTMAN_BASEURL . 'api/pregnancy/all/'.$start . '--' . $end;
+  $bjson = drupal_http_request($dburl);
+  $bobj = json_decode($bjson->data, true);
+  $y = $bobj['nodes'][0]['node']['count'];
+  $a = number_format($x/$y * 100);
+  
+  drupal_add_js(array(
+    'chartman2_task4a' => array(
+      'label' => ['Yes', 'No'],
+      'data' => [$a, 100-$a],
+    ),
+  ), 'setting');
+ 
+ 
+  /* B pie chart */
+  $daurl = CHARTMAN_BASEURL . 'api/pregnancy/yes/'.$start . '--' . $end;
+  $ajson = drupal_http_request($daurl);
+  $aobj = json_decode($ajson->data, true);
+  $x = $aobj['nodes'][0]['node']['count'];
+  $dburl = CHARTMAN_BASEURL . 'api/pregnancy/general/'.$start . '--' . $end;
+  $bjson = drupal_http_request($dburl);
+  $bobj = json_decode($bjson->data, true);
+  $y = $bobj['nodes'][0]['node']['count'];
+  $a = number_format($x/$y * 100);
+  
+  drupal_add_js(array(
+    'chartman2_task4b' => array(
+      'label' => ['Yes', 'No'],
+      'data' => [$a, 100-$a],
+    ),
+  ), 'setting');
+  
+  
+  /* C pie chart */
+  $daurl = CHARTMAN_BASEURL . 'api/healthworker/yes/'.$start . '--' . $end;
+  $ajson = drupal_http_request($daurl);
+  $aobj = json_decode($ajson->data, true);
+  $x = $aobj['nodes'][0]['node']['count'];
+  $dburl = CHARTMAN_BASEURL . 'api/healthworker/all/'.$start . '--' . $end;
+  $bjson = drupal_http_request($dburl);
+  $bobj = json_decode($bjson->data, true);
+  $y = $bobj['nodes'][0]['node']['count'];
+  $a = number_format($x/$y * 100);
+  
+  drupal_add_js(array(
+    'chartman2_task4c' => array(
+      'label' => ['Yes', 'No'],
+      'data' => [$a, 100-$a],
+    ),
+  ), 'setting');
+
+  return theme(
+    'chartman2_task4',
+    []
+  );
+}
+
+function chartman2_task5_page($start, $end) {
+  /* A */
+  $curl = CHARTMAN_BASEURL . 'api/lgapositive/'.$start . '--' . $end;
+  $cjson = drupal_http_request($curl);
+  $cobj = json_decode($cjson->data, true);
+  $c1 = []; $csum = $csum2 = 0;
+  if ($cobj['nodes']) {
+    $csum = array_sum(array_map(function($x){ 
+      return str_replace(',', '', $x['node']['count']);
+    }, $cobj['nodes']));
+
+    foreach ($cobj['nodes'] as $key => $value) {
+      $count = str_replace(',', '', $value['node']['count']); 
+      $tsum = ($count / $csum) * 100;
+      $c1[] = array(
+        'age' => $value['node']['lga'],
+        'number' => $value['node']['count'],
+        'percent' => number_format($tsum),
+      );
+      $csum2 += $tsum;
+    }
+  }
+  $a = [$c1, $csum, $csum2];
+
+
+  /* B bar chart */
+  $burl = CHARTMAN_BASEURL . 'api/lga/tprz/'.$start . '--' . $end;
+  $bjson = drupal_http_request($burl);
+  $cobj = json_decode($bjson->data, true);
+  $barlabel = $positive = $all = []; 
+  if ($cobj['nodes']) {
+    foreach ($cobj['nodes'] as $key => $value) {
+      $p = trim(str_replace(',', '', $value['node']['positive']));
+      $al = trim(str_replace(',', '', $value['node']['all']));
+      $barlabel[] = trim($value['node']['lga']);
+      $positive[] = $p;
+      $all[] = ($al > 0) ? round(( $p/$al ) * 100) : 0;
+    }
+  }
+
+  drupal_add_js(array(
+    'chartman2_task5b' => array(
+      'label' => $barlabel,
+      'data' => array(
+        array(
+          'type' => 'line',
+          'yAxisID' => 'B',
+          'label' => 'Test Positivity',
+          'data' => $all,
+          'borderWidth' => 2,
+				  'fill' => false,
+          'borderColor' => '#CE1713',
+        ),
+        array(
+          'type' => 'bar',
+          'yAxisID' => 'A',
+          'label' => 'Tested',
+          'data' => $positive,
+          'backgroundColor' => '#0086C6',
+          #'barThickness' => 10,
+        )
+      ),
+    ),
+  ), 'setting');
+
+
+  /* C */
+  $curl = CHARTMAN_BASEURL . 'api/nationality/'.$start . '--' . $end;
+  $cjson = drupal_http_request($curl);
+  $cobj = json_decode($cjson->data, true);
+  $c1 = []; $csum = $csum2 = 0;
+  if ($cobj['nodes']) {
+    $csum = array_sum(array_map(function($x){ 
+      return str_replace(',', '', $x['node']['count']);
+    }, $cobj['nodes']));
+
+    foreach ($cobj['nodes'] as $key => $value) {
+      $count = str_replace(',', '', $value['node']['count']); 
+      $tsum = ($count / $csum) * 100;
+      $c1[] = array(
+        'nationality' => $value['node']['nationality'],
+        'number' => $value['node']['count'],
+        'percent' => number_format($tsum),
+      );
+      $csum2 += $tsum;
+    }
+  }
+  $c = [$c1, $csum, $csum2];
+
+  return theme(
+    'chartman2_task5',
+    [
+      'a' => $a,
+      'c' => $c,
+    ]
+  );
+}
+
+
+
+function chartman2_theme() {
+  $arrays = [];
+
+  $arrays['chartman2_task1'] = array(
+    'variables' => array(),
+    'template' => 'templates/task1',
+  );
+  $arrays['chartman2_task2'] = array(
+    'variables' => array(),
+    'template' => 'templates/task2',
+  );
+  $arrays['chartman2_task3'] = array(
+    'variables' => array(),
+    'template' => 'templates/task3',
+  );
+  $arrays['chartman2_task4'] = array(
+    'variables' => array(),
+    'template' => 'templates/task4',
+  );
+  $arrays['chartman2_task5'] = array(
+    'variables' => array(),
+    'template' => 'templates/task5',
+  );
+  return $arrays;
+
+}

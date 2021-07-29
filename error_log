@@ -1,0 +1,763 @@
+[28-Aug-2020 18:03:58 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 18:05:17 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 18:36:26 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 18:37:29 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 18:41:24 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 18:54:06 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 19:03:48 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 20:52:41 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 21:00:52 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 21:01:47 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 21:04:09 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[28-Aug-2020 21:39:45 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[29-Aug-2020 01:05:16 Africa/Lagos] PHP Fatal error:  Redefinition of parameter $source in /home/tasuederp/public_html/dss/sites/all/modules/feeds_tamper/plugins/default_value.inc on line 36
+[04-Nov-2020 09:42:24 Africa/Lagos] PHP Fatal error:  Cannot use try without catch or finally in /home/projectdemo/public_html/colab/sites/all/modules/computed_field/computed_field.module(468) : eval()'d code on line 11
+[04-Nov-2020 10:15:02 Africa/Lagos] PHP Fatal error:  Cannot use try without catch or finally in /home/projectdemo/public_html/colab/sites/all/modules/computed_field/computed_field.module(468) : eval()'d code on line 3
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:12:04 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:20 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/projectdemo/public_html/colab/includes/module.inc on line 1149
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[14-Nov-2020 17:14:22 Africa/Lagos] PHP Notice:  Trying to get property of non-object in /home/projectdemo/public_html/colab/includes/module.inc on line 1150
+[21-Nov-2020 09:27:16 Africa/Lagos] PHP Fatal error:  Cannot redeclare moving_avg() (previously declared in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module:973) in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module on line 973
+[21-Nov-2020 09:28:09 Africa/Lagos] PHP Fatal error:  Cannot redeclare moving_avg() (previously declared in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module:973) in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module on line 973
+[21-Nov-2020 09:28:44 Africa/Lagos] PHP Fatal error:  Cannot redeclare moving_avg() (previously declared in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module:973) in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module on line 973
+[21-Nov-2020 09:30:12 Africa/Lagos] PHP Fatal error:  Cannot redeclare moving_avg() (previously declared in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module:973) in /home/projectdemo/public_html/colab/sites/all/modules/chartman/chartman.module on line 973
+[24-Nov-2020 14:09:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[24-Nov-2020 14:09:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[24-Nov-2020 14:16:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Nov-2020 14:16:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Nov-2020 14:16:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[24-Nov-2020 14:49:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Nov-2020 14:49:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[24-Nov-2020 15:07:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Nov-2020 15:07:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[24-Nov-2020 16:01:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Nov-2020 16:01:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[24-Nov-2020 20:16:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[24-Nov-2020 20:16:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[25-Nov-2020 10:43:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Nov-2020 10:43:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[25-Nov-2020 13:22:08 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 13:23:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 13:23:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[25-Nov-2020 13:31:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 13:31:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[25-Nov-2020 13:43:35 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Nov-2020 13:43:35 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[25-Nov-2020 14:06:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Nov-2020 14:06:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[25-Nov-2020 14:12:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 24576 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Nov-2020 14:17:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 14:17:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[25-Nov-2020 17:50:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 17:50:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[25-Nov-2020 19:42:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[25-Nov-2020 19:42:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[25-Nov-2020 21:27:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Nov-2020 21:27:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[26-Nov-2020 08:10:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[26-Nov-2020 08:10:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[27-Nov-2020 06:56:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[27-Nov-2020 06:56:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[27-Nov-2020 16:49:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[27-Nov-2020 16:49:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[30-Nov-2020 10:13:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[30-Nov-2020 10:13:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[30-Nov-2020 10:59:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[30-Nov-2020 15:04:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[30-Nov-2020 15:04:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[30-Nov-2020 15:05:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 24576 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[01-Dec-2020 10:05:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 10:05:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 1859
+[01-Dec-2020 10:15:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 10:42:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 10:42:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 536
+[01-Dec-2020 12:39:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 12:39:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 536
+[01-Dec-2020 17:22:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 17:22:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 49
+[01-Dec-2020 21:21:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[01-Dec-2020 21:21:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 49
+[02-Dec-2020 11:23:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 11:45:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/date/date_api/date_api.module on line 602
+[02-Dec-2020 11:46:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[02-Dec-2020 11:46:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 11:47:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Dec-2020 11:47:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 11:55:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 12:22:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/date/date_api/date_api.module on line 602
+[02-Dec-2020 12:23:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[02-Dec-2020 12:23:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 12:50:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Dec-2020 12:50:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 13:11:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 13:13:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 13:24:02 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 14:02:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 14:03:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 14:24:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 14:44:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[02-Dec-2020 15:03:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_query_default.inc on line 144
+[02-Dec-2020 15:03:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:19:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/date/date_api/date_api.module on line 260
+[02-Dec-2020 15:19:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:20:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[02-Dec-2020 15:20:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[02-Dec-2020 15:28:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 15:29:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Dec-2020 15:29:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:42:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Dec-2020 15:43:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_query_default.inc on line 1568
+[02-Dec-2020 15:43:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:45:08 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_query_default.inc on line 1568
+[02-Dec-2020 15:45:08 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:54:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_query_default.inc on line 1568
+[02-Dec-2020 15:54:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 15:55:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 1714
+[02-Dec-2020 15:55:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 16:47:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Dec-2020 20:05:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[02-Dec-2020 20:05:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Dec-2020 21:51:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[02-Dec-2020 21:51:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[03-Dec-2020 09:30:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 10:48:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[03-Dec-2020 10:54:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 11:14:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[03-Dec-2020 12:22:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 14:37:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 14:37:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 15:58:39 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_relationship.inc on line 118
+[03-Dec-2020 15:58:39 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 15:58:39 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 16:00:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 16:00:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 16:02:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 16:02:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 16:08:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 16:08:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 16:18:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 16:18:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[03-Dec-2020 16:41:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 22:19:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[03-Dec-2020 22:19:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[04-Dec-2020 10:25:39 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[04-Dec-2020 10:33:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[04-Dec-2020 10:33:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[04-Dec-2020 10:34:32 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[06-Dec-2020 13:56:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[06-Dec-2020 13:56:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[06-Dec-2020 18:55:22 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[07-Dec-2020 11:26:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[07-Dec-2020 11:26:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[07-Dec-2020 12:15:09 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[07-Dec-2020 19:49:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[07-Dec-2020 19:50:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[07-Dec-2020 19:50:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[07-Dec-2020 19:52:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[07-Dec-2020 19:52:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[07-Dec-2020 21:40:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[07-Dec-2020 21:40:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[08-Dec-2020 11:16:02 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[08-Dec-2020 19:03:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[09-Dec-2020 11:13:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[09-Dec-2020 14:08:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[09-Dec-2020 14:09:12 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[09-Dec-2020 14:09:12 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[09-Dec-2020 15:45:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[09-Dec-2020 15:45:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[09-Dec-2020 19:08:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[09-Dec-2020 23:03:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[10-Dec-2020 01:52:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[11-Dec-2020 19:51:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[12-Dec-2020 12:32:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[12-Dec-2020 12:55:22 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[12-Dec-2020 19:11:51 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[13-Dec-2020 21:09:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[13-Dec-2020 21:12:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 24576 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[14-Dec-2020 10:00:37 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[14-Dec-2020 10:24:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[14-Dec-2020 10:36:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 28672 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[14-Dec-2020 10:39:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 10:40:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 10:50:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[14-Dec-2020 10:55:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 28672 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[14-Dec-2020 10:59:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:04:26 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:08:32 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:12:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:14:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:17:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[14-Dec-2020 11:19:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[14-Dec-2020 11:20:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/entity/includes/entity.wrapper.inc on line 356
+[14-Dec-2020 11:22:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 28672 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[14-Dec-2020 11:24:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 11:27:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 13:57:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 14:07:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 14:38:12 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 15:13:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[14-Dec-2020 15:13:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[14-Dec-2020 15:13:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[14-Dec-2020 15:18:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[14-Dec-2020 17:24:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 09:18:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 10:38:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 10:41:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 10:41:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 10:58:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 10:58:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 11:18:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 11:18:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 11:32:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 11:32:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 11:48:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 11:48:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 11:53:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 12:14:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 12:16:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 12:16:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 12:42:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/handlers/views_handler_argument.inc on line 105
+[15-Dec-2020 12:42:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 13:00:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[15-Dec-2020 13:00:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[15-Dec-2020 13:22:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 13:40:37 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 13:40:37 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[15-Dec-2020 14:09:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:09:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[15-Dec-2020 14:10:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:10:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:10:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[15-Dec-2020 14:20:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:33:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[15-Dec-2020 14:38:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:48:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/views.module on line 2419
+[15-Dec-2020 14:48:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[15-Dec-2020 14:49:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 14:49:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 531
+[15-Dec-2020 15:21:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 15:36:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 15:38:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/date/date_api/date_api.module on line 602
+[15-Dec-2020 15:53:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[15-Dec-2020 15:54:08 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[15-Dec-2020 20:49:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[15-Dec-2020 20:50:22 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[15-Dec-2020 20:50:35 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[15-Dec-2020 21:47:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 21:47:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 22:30:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[15-Dec-2020 22:30:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/mysql/query.inc on line 72
+[15-Dec-2020 23:47:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[15-Dec-2020 23:53:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[15-Dec-2020 23:54:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/cache.inc on line 449
+[16-Dec-2020 00:02:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 1856
+[16-Dec-2020 00:02:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[16-Dec-2020 00:05:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/date/date_api/date_api.module on line 604
+[16-Dec-2020 00:06:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[16-Dec-2020 10:12:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[16-Dec-2020 11:48:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[16-Dec-2020 11:48:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[16-Dec-2020 11:54:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[16-Dec-2020 12:38:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[16-Dec-2020 12:38:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[16-Dec-2020 13:15:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[16-Dec-2020 13:15:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[17-Dec-2020 11:21:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[17-Dec-2020 11:21:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[17-Dec-2020 12:08:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[17-Dec-2020 12:11:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[17-Dec-2020 19:17:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[17-Dec-2020 20:54:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[17-Dec-2020 20:54:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[18-Dec-2020 10:50:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[18-Dec-2020 10:53:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[18-Dec-2020 10:53:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 531
+[18-Dec-2020 11:40:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[18-Dec-2020 11:40:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:02:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[18-Dec-2020 12:02:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:02:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 12:02:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:11:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[18-Dec-2020 12:11:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:12:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 12:12:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:19:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 1954
+[18-Dec-2020 12:19:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[18-Dec-2020 12:29:44 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[18-Dec-2020 12:31:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 12:31:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[18-Dec-2020 17:31:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 17:31:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[18-Dec-2020 17:31:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 17:31:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[18-Dec-2020 17:32:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 17:32:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[18-Dec-2020 17:34:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[18-Dec-2020 17:34:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[23-Dec-2020 17:54:08 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[23-Dec-2020 17:57:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 18:22:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 18:23:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 18:25:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[23-Dec-2020 18:25:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[23-Dec-2020 19:11:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 19:12:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 19:13:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 19:34:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[23-Dec-2020 19:34:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[23-Dec-2020 20:46:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[23-Dec-2020 20:46:49 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[23-Dec-2020 21:10:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 21:22:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 21:26:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[23-Dec-2020 21:31:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Dec-2020 09:43:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[24-Dec-2020 09:43:21 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[24-Dec-2020 10:37:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[24-Dec-2020 10:37:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[24-Dec-2020 13:49:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[24-Dec-2020 13:49:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 530
+[24-Dec-2020 18:07:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[24-Dec-2020 18:07:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[24-Dec-2020 18:28:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[24-Dec-2020 18:28:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[25-Dec-2020 20:24:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[25-Dec-2020 20:24:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[27-Dec-2020 21:10:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[27-Dec-2020 21:10:24 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[28-Dec-2020 19:19:38 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[29-Dec-2020 09:01:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[29-Dec-2020 10:34:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 183
+[29-Dec-2020 10:34:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[29-Dec-2020 10:56:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 10:56:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[29-Dec-2020 13:09:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 13:10:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 13:11:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 13:40:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 15:20:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[29-Dec-2020 15:20:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[29-Dec-2020 15:41:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 967
+[29-Dec-2020 15:41:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 536
+[29-Dec-2020 19:38:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[29-Dec-2020 19:38:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[29-Dec-2020 19:40:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 19:44:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[29-Dec-2020 20:15:09 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[30-Dec-2020 10:18:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 1754
+[30-Dec-2020 10:18:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[30-Dec-2020 17:36:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 1754
+[30-Dec-2020 17:36:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[31-Dec-2020 09:53:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 1754
+[31-Dec-2020 09:53:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[01-Jan-2021 10:08:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 1754
+[01-Jan-2021 10:08:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[01-Jan-2021 15:20:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/handlers.inc on line 59
+[01-Jan-2021 15:20:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/bootstrap.inc on line 2009
+[01-Jan-2021 21:57:32 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Jan-2021 09:32:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[02-Jan-2021 10:05:25 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[02-Jan-2021 10:05:25 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/module.inc on line 958
+[02-Jan-2021 10:06:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Jan-2021 10:06:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/modules/dblog/dblog.module on line 153
+[02-Jan-2021 10:08:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/sites/all/modules/views/includes/base.inc on line 129
+[02-Jan-2021 10:08:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/projectdemo/public_html/colab/includes/database/query.inc on line 500
+[02-Jan-2021 11:33:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function menu_get_object() in /home/lagosepid/public_html/includes/theme.inc:2619
+Stack trace:
+#0 /home/lagosepid/public_html/includes/theme.inc(1125): template_preprocess_html(Array, 'maintenance_pag...')
+#1 /home/lagosepid/public_html/includes/errors.inc(254): theme('maintenance_pag...', Array)
+#2 /home/lagosepid/public_html/includes/bootstrap.inc(2621): _drupal_log_error(Array, true)
+#3 [internal function]: _drupal_exception_handler(Object(PDOException))
+#4 {main}
+  thrown in /home/lagosepid/public_html/includes/theme.inc on line 2619
+[02-Jan-2021 12:33:46 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32495 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32492 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32487 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32484 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32481 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32478 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32475 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32456 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32452 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32436 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32416 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32405 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32397 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32391 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32389 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32387 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32385 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:33:50 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32383 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:35 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=399 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:35 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=394 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:36 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=390 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:36 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=382 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:36 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=377 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:36 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=372 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:36 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=370 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=368 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=363 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=352 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=345 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=335 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:37 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=330 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:38 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=325 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:38 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=320 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:38 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=316 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:38 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=313 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=309 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=306 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=301 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32756 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32751 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:39 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32746 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:40 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32739 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:40 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32736 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:40 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32733 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:40 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32728 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32725 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32722 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32718 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32715 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32712 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:41 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32709 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:42 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32706 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:42 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32704 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:42 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32693 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:42 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32690 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:42 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32685 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:43 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32678 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:43 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32675 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:43 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32668 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:44 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32662 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:44 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32659 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:45 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32655 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:45 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32651 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:46 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32646 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:46 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32642 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32639 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:47 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32627 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32624 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:48 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32616 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32611 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32606 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:49 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32603 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:50 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32600 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:50 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32596 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:51 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32593 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[02-Jan-2021 12:34:51 Africa/Lagos] PHP Warning:  Error while sending QUERY packet. PID=32591 in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[05-Jan-2021 11:21:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[05-Jan-2021 11:21:59 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[05-Jan-2021 11:23:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[05-Jan-2021 11:23:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[05-Jan-2021 11:23:29 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[05-Jan-2021 11:33:22 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[05-Jan-2021 11:37:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[05-Jan-2021 11:37:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[06-Jan-2021 06:23:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[06-Jan-2021 06:39:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[06-Jan-2021 06:39:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[06-Jan-2021 19:14:37 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[06-Jan-2021 22:23:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[07-Jan-2021 06:26:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[07-Jan-2021 06:26:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[07-Jan-2021 20:36:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[07-Jan-2021 20:36:01 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[08-Jan-2021 09:24:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[08-Jan-2021 09:24:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[08-Jan-2021 13:45:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[09-Jan-2021 07:40:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views_argument_substitutions/views_argument_substitutions.module on line 159
+[09-Jan-2021 07:40:54 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[10-Jan-2021 09:10:26 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[11-Jan-2021 19:10:46 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[11-Jan-2021 22:29:05 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[12-Jan-2021 14:17:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/cer/cer.admin.inc on line 147
+[12-Jan-2021 14:17:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/session.inc on line 178
+[12-Jan-2021 14:17:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/errors.inc on line 59
+[14-Jan-2021 11:25:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[14-Jan-2021 11:25:43 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[14-Jan-2021 22:21:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[14-Jan-2021 22:21:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[15-Jan-2021 22:16:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[15-Jan-2021 22:16:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[16-Jan-2021 15:38:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[16-Jan-2021 15:38:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[16-Jan-2021 19:42:13 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[16-Jan-2021 20:22:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 1726
+[16-Jan-2021 20:22:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[16-Jan-2021 20:49:40 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 1726
+[16-Jan-2021 20:49:40 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[17-Jan-2021 00:04:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 00:04:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[17-Jan-2021 01:21:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 05:38:26 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16384 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[17-Jan-2021 07:56:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 08:07:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 08:34:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[17-Jan-2021 08:34:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[17-Jan-2021 11:57:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 11:57:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/modules/dblog/dblog.module on line 153
+[17-Jan-2021 11:59:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 11:59:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[17-Jan-2021 11:59:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[17-Jan-2021 12:26:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[17-Jan-2021 12:26:15 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[17-Jan-2021 16:49:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[17-Jan-2021 22:21:19 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 22:21:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[17-Jan-2021 22:27:40 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 28672 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[17-Jan-2021 22:28:25 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 28672 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[17-Jan-2021 23:30:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[17-Jan-2021 23:30:06 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[18-Jan-2021 14:19:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/views.module on line 2419
+[18-Jan-2021 14:19:47 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[18-Jan-2021 16:55:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[18-Jan-2021 16:55:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[18-Jan-2021 22:17:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/views.module on line 2419
+[18-Jan-2021 22:17:56 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[19-Jan-2021 04:48:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/views.module on line 2419
+[19-Jan-2021 04:48:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[19-Jan-2021 11:25:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[19-Jan-2021 13:03:35 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[19-Jan-2021 13:16:16 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[19-Jan-2021 13:47:25 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views_argument_substitutions/views_argument_substitutions.module on line 159
+[19-Jan-2021 14:06:03 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views_argument_substitutions/views_argument_substitutions.module on line 159
+[20-Jan-2021 12:41:10 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[20-Jan-2021 13:10:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[20-Jan-2021 13:11:50 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views_argument_substitutions/views_argument_substitutions.module on line 159
+[20-Jan-2021 13:13:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views_argument_substitutions/views_argument_substitutions.module on line 159
+[22-Jan-2021 11:00:25 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[22-Jan-2021 13:58:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_query_default.inc on line 145
+[22-Jan-2021 15:28:42 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/database/select.inc on line 1392
+[22-Jan-2021 16:55:41 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[22-Jan-2021 21:39:57 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[23-Jan-2021 08:37:55 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[24-Jan-2021 14:19:33 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/handlers.inc on line 59
+[24-Jan-2021 17:32:59 Africa/Lagos] PHP Fatal error:  view::destroy(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;views_plugin_display_system&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /home/lagosepid/public_html/sites/all/modules/views/includes/view.inc on line 2048
+[24-Jan-2021 17:33:16 Africa/Lagos] PHP Fatal error:  view::destroy(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition &quot;views_plugin_display_system&quot; of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide an autoloader to load the class definition in /home/lagosepid/public_html/sites/all/modules/views/includes/view.inc on line 2048
+[25-Jan-2021 11:14:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/lagosepid/public_html/sites/all/modules/views/theme/views-view-fields.tpl.php on line 1
+[25-Jan-2021 11:15:58 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 24576 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[25-Jan-2021 14:45:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[25-Jan-2021 14:45:11 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/database/mysql/query.inc on line 72
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 86113145 bytes) in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 56725504 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 3807
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 29552640 bytes) in Unknown on line 0
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Notice:  Undefined offset: 0 in /home/lagosepid/public_html/includes/errors.inc on line 280
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Notice:  Undefined index: file in /home/lagosepid/public_html/includes/errors.inc on line 72
+[26-Jan-2021 08:10:44 Africa/Lagos] PHP Notice:  Undefined index: line in /home/lagosepid/public_html/includes/errors.inc on line 73
+[26-Jan-2021 08:45:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 83234544 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[26-Jan-2021 08:45:53 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 83238912 bytes) in Unknown on line 0
+[26-Jan-2021 14:13:30 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 85768672 bytes) in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[26-Jan-2021 14:13:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 54599680 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 3807
+[26-Jan-2021 14:13:31 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 28999680 bytes) in Unknown on line 0
+[26-Jan-2021 14:13:31 Africa/Lagos] PHP Notice:  Undefined offset: 0 in /home/lagosepid/public_html/includes/errors.inc on line 280
+[26-Jan-2021 14:13:31 Africa/Lagos] PHP Notice:  Undefined index: file in /home/lagosepid/public_html/includes/errors.inc on line 72
+[26-Jan-2021 14:13:31 Africa/Lagos] PHP Notice:  Undefined index: line in /home/lagosepid/public_html/includes/errors.inc on line 73
+[26-Jan-2021 15:26:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 967
+[26-Jan-2021 15:26:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[26-Jan-2021 15:44:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82802040 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[26-Jan-2021 15:44:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82808832 bytes) in Unknown on line 0
+[26-Jan-2021 16:04:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[26-Jan-2021 16:04:34 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[26-Jan-2021 16:19:26 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 85876583 bytes) in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 50434048 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 3807
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32833536 bytes) in Unknown on line 0
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Notice:  Undefined offset: 0 in /home/lagosepid/public_html/includes/errors.inc on line 280
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Notice:  Undefined index: file in /home/lagosepid/public_html/includes/errors.inc on line 72
+[26-Jan-2021 16:41:14 Africa/Lagos] PHP Notice:  Undefined index: line in /home/lagosepid/public_html/includes/errors.inc on line 73
+[26-Jan-2021 16:56:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82907632 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[26-Jan-2021 16:56:18 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82911232 bytes) in Unknown on line 0
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 85719134 bytes) in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 52453376 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 3807
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 33370112 bytes) in Unknown on line 0
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Notice:  Undefined offset: 0 in /home/lagosepid/public_html/includes/errors.inc on line 280
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Notice:  Undefined index: file in /home/lagosepid/public_html/includes/errors.inc on line 72
+[26-Jan-2021 17:41:17 Africa/Lagos] PHP Notice:  Undefined index: line in /home/lagosepid/public_html/includes/errors.inc on line 73
+[26-Jan-2021 17:41:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82786360 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[26-Jan-2021 17:41:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82792448 bytes) in Unknown on line 0
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 85747449 bytes) in /home/lagosepid/public_html/includes/database/database.inc on line 2227
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 52469760 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 3807
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 33177600 bytes) in Unknown on line 0
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Notice:  Undefined offset: 0 in /home/lagosepid/public_html/includes/errors.inc on line 280
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Notice:  Undefined index: file in /home/lagosepid/public_html/includes/errors.inc on line 72
+[26-Jan-2021 19:32:27 Africa/Lagos] PHP Notice:  Undefined index: line in /home/lagosepid/public_html/includes/errors.inc on line 73
+[26-Jan-2021 19:40:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82829240 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[26-Jan-2021 19:40:48 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82833408 bytes) in Unknown on line 0
+[27-Jan-2021 01:13:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82776328 bytes) in /home/lagosepid/public_html/includes/theme.inc on line 1529
+[27-Jan-2021 01:13:07 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 82780160 bytes) in Unknown on line 0
+[27-Jan-2021 09:38:02 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[27-Jan-2021 10:23:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[27-Jan-2021 10:23:23 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/database/query.inc on line 530
+[27-Jan-2021 13:52:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[27-Jan-2021 13:52:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/bootstrap.inc on line 2009
+[27-Jan-2021 14:38:22 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[27-Jan-2021 15:17:32 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[27-Jan-2021 15:17:32 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[27-Jan-2021 15:18:45 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16384 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 87
+[27-Jan-2021 17:41:28 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/database/select.inc on line 1558
+[27-Jan-2021 21:10:52 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[27-Jan-2021 21:11:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[27-Jan-2021 21:11:00 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/database/query.inc on line 762
+[27-Jan-2021 21:23:20 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[28-Jan-2021 05:18:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/includes/base.inc on line 129
+[28-Jan-2021 05:18:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/sites/all/modules/views/plugins/views_plugin_display.inc on line 64
+[28-Jan-2021 05:18:36 Africa/Lagos] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes) in /home/lagosepid/public_html/includes/module.inc on line 958
+[17-Jun-2021 11:33:39 Africa/Lagos] PHP Fatal error:  Uncaught Error: Cannot unset string offsets in /home/lagosepid/public_html/modules/field/field.default.inc:41
+Stack trace:
+#0 /home/lagosepid/public_html/modules/field/field.attach.inc(209): field_default_extract_form_values('user', Object(stdClass), Array, Array, 'und', Array, Array, Array)
+#1 /home/lagosepid/public_html/modules/field/field.attach.inc(385): _field_invoke('extract_form_va...', 'user', Object(stdClass), Array, Array, Array)
+#2 /home/lagosepid/public_html/modules/field/field.attach.inc(890): _field_invoke_default('extract_form_va...', 'user', Object(stdClass), Array, Array, Array)
+#3 /home/lagosepid/public_html/includes/common.inc(8387): field_attach_submit('user', Object(stdClass), Array, Array)
+#4 /home/lagosepid/public_html/sites/all/modules/logintoboggan/logintoboggan.module(480): entity_form_submit_build_entity('user', Object(stdClass), Array, Array)
+#5 /home/lagosepid/public_html/includes/form.inc(1525): logintoboggan_user_register_submit(Array, Array)
+#6 /home/lagosepid/public_html/inclu in /home/lagosepid/public_html/modules/field/field.default.inc on line 41
+[05-Jul-2021 12:42:26 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('schema:runtime:...')
+#5 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(438): lock_acquire('schema:runtime:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): DrupalCacheArray->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 13:06:17 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 13:36:39 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 13:53:44 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 15:02:20 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 15:02:26 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 15:03:49 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 15:05:14 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/projectdemo/public_html/nitp/includes/database/database.inc:2227
+Stack trace:
+#0 /home/projectdemo/public_html/nitp/includes/database/database.inc(2227): PDOStatement->execute(Array)
+#1 /home/projectdemo/public_html/nitp/includes/database/database.inc(697): DatabaseStatementBase->execute(Array, Array)
+#2 /home/projectdemo/public_html/nitp/includes/database/database.inc(2406): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/projectdemo/public_html/nitp/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/projectdemo/public_html/nitp/includes/lock.inc(146): lock_may_be_available('theme_registry:...')
+#5 /home/projectdemo/public_html/nitp/includes/theme.inc(449): lock_acquire('theme_registry:...')
+#6 /home/projectdemo/public_html/nitp/includes/bootstrap.inc(460): ThemeRegistry->set(Array)
+#7 [internal function]: DrupalCacheArray->__destruct()
+#8 {main}
+  thrown in /home/projectdemo/public_html/nitp/includes/database/database.inc on line 2227
+[05-Jul-2021 15:18:20 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:18:20 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:18:20 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:18:43 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:18:43 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:18:43 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:20:24 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:20:24 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:20:24 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:22:29 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:22:29 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:22:29 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:34:26 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:34:26 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:34:26 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:42:03 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:42:03 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:42:03 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:44:25 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:44:25 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:44:25 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:46:38 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:46:38 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 15:46:38 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:06 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:06 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:06 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:22 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:22 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:22 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:29 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:29 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:12:37 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[05-Jul-2021 21:33:10 Africa/Lagos] PHP Notice:  Undefined index: type in /home/projectdemo/public_html/nitp/sites/all/modules/rules/includes/rules.state.inc on line 620
+[06-Jul-2021 08:44:07 Africa/Lagos] PHP Fatal error:  Cannot redeclare nitp_rules_action_info() (previously declared in /home/projectdemo/public_html/nitp/sites/all/modules/nitp/nitp.module:333) in /home/projectdemo/public_html/nitp/sites/all/modules/nitp/nitp.rules.inc on line 23
+[09-Jul-2021 17:59:42 Africa/Lagos] PHP Fatal error:  require_once(): Failed opening required '/home/projectdemo/public_html/nitp/sites/all/modules/nitp/nitp.forms.inc' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/projectdemo/public_html/nitp/includes/menu.inc on line 525

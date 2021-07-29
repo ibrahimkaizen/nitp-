@@ -1,0 +1,109 @@
+<?php 
+
+function mydisplay_menu() {
+  $items['dspl/lab/%'] = array(
+      'page callback' => 'mydisplay_get_lab',
+      'page arguments' => array(2),
+      'type' => MENU_NORMAL_ITEM,
+      'access callback' => TRUE,
+  );
+  $items['dspl/currency/%'] = array(
+      'page callback' => 'mydisplay_get_currency',
+      'page arguments' => array(2),
+      'type' => MENU_NORMAL_ITEM,
+      'access callback' => TRUE,
+  );
+  
+  return $items;
+}
+
+function mydisplay_get_lab($tid) {
+  $wrapper = entity_metadata_wrapper('taxonomy_term', $tid);
+  $address = $wrapper->field_office_address->value();
+  $phone = $wrapper->field_phone_number->value();
+  return drupal_json_output(["address" => $address, "phone" => $phone]);
+}
+
+
+function mydisplay_get_currency($currency) {
+  $tids = $_POST['tids'];
+  $amounts = [''];
+
+  foreach($tids as $key=>$value) {
+    $wrapper = entity_metadata_wrapper('taxonomy_term', $value);
+    if ($currency == 1) {
+      $amounts[] = "₦".$wrapper->field_amount->value();
+    }elseif($currency == 2) {
+        $val = $wrapper->field_amount->value() / variable_get('nitp_dollar_rate');
+      $amounts[] = "$" . round($val, 2);
+    
+    }elseif($currency == 3) {
+        $val = $wrapper->field_amount->value() / variable_get('nitp_gbp_rate');
+      $amounts[] = "£" . round($val, 2);
+    
+    }elseif($currency == 4) {
+        $val = $wrapper->field_amount->value() / variable_get('nitp_euro_rate');
+      $amounts[] = "€" . round($val, 2);
+    }
+  }
+  
+  return drupal_json_output(["amounts" => $amounts]);
+}
+
+
+function mydisplay_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'nitp_form_node_form' or $form_id == 'outbound_node_form'){
+       
+      foreach($form as $key=>$value) {
+        if (is_array($value)){
+          if(array_key_exists('und', $value) && isset($form[$key]['und']['#type']) && $form[$key]['und']['#type'] == 'select' ){
+            $form[$key]['und']['#options']['_none'] = "--" . $form[$key]['und']['#title'] . "--";
+            //unset($form[$key]['und']['#title']);
+          }
+
+          if(array_key_exists('und', $value) && isset($form[$key]['und'][0]) && isset($form[$key]['und'][0]['field_state_in_nigeria'])){
+            $form[$key]['und'][0]['field_state_in_nigeria']['und']['#options']['_none'] = "--" . $form[$key]['und'][0]['field_state_in_nigeria']['und']['#title'] . "--";
+
+          }
+
+        }
+      }
+  }
+
+  if($form_id == 'article_node_form'){
+    foreach($form as $key=>$value) {
+      if (is_array($value)){
+        if(array_key_exists('und', $value) && $form[$key]['und']['#type'] == 'select' ){
+          $form[$key]['und']['#options']['_none'] = "--" . $form[$key]['und']['#title'] . "--";
+          //unset($form[$key]['und']['#title']);
+        }
+      }
+    }
+  }
+}
+
+function mydisplay_field_group_pre_render(&$element, $group, &$form) {
+    switch ($group->format_type) {
+        case 'accordion-item': 
+            $add = array(
+                '#type' => 'markup',
+                '#weight' => $group->weight,
+            );
+            
+            $add['#prefix'] = '<h3 class="field-group-format-toggler ' . $group->format_type . ($group->format_settings['formatter'] != 'open' ? '' : ' field-group-accordion-active') . '"><a href="#">' . $group->label . '</a></h3><div class="field-group-format-wrapper ">';
+            
+            $add['#suffix'] = '</div>';
+            
+            $element += $add;
+            
+            break;
+    }
+    
+}
+
+/**
+ * Implements hook_date_popup_process_alter().
+ */
+/**function mydisplay_date_popup_process_alter(&$element, &$form_state, $context) {
+  $element['date']['#attributes']['placeholder'] = $element['#date_title'];
+}**/
